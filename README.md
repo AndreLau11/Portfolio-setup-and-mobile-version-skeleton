@@ -2,14 +2,16 @@
 
 # Project Name
 
-> Description the project.
+> Portfolio-setup-and-mobile-version-skeleton.
+
+This is a description of the porject I have done so far and is easy for you to check.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML & CSS
+- It was used as reference for this project the link is https://www.w3schools.com/css/css_grid_container.asp
+- Done by laptop and Visual Code.
 
 ## Live Demo (if available)
 
@@ -42,21 +44,15 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: Hector Andre Lau (https://github.com/AndreLau11)
+- Twitter: Hector Andre Lau (https://twitter.com/HectorAndreLau)
+- LinkedIn: Hector Andre Lau (https://www.linkedin.com/in/h%C3%A9ctor-andr%C3%A9-lau-estrada-b4947795/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/AndreLau11/Portfolio-setup-and-mobile-version-skeleton/issues).
 
 ## Show your support
 
