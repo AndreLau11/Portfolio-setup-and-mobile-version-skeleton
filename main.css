@@ -1,42 +1,43 @@
-header{
-  background-color:gray;
-  width:auto;
-  height:35px;
-  size:60px;
-  align-items:center;
-  vertical-align:middle;
-}
-div{
-  color:orangered;
-  background-color:black;
+header {
+  background-color: gray;
+  width: auto;
+  height: 35px;
+  align-items: center;
+  vertical-align: middle;
 }
 
-body{
-  background-color:white;
+div {
+  color: orangered;
+  background-color: black;
 }
-h1{
-  align-items:center;
+
+body {
+  background-color: white;
 }
-h2{
-  color:white;
-  width:auto;
-  height:auto;
-  background-color:black;
+
+h1 {
+  align-items: center;
 }
-label{
-  color:white;
-  width:auto;
-  height:auto;
-  background-color:black;
+
+h2 {
+  color: white;
+  width: auto;
+  height: auto;
+  background-color: black;
 }
-#label1{
-  background-color:gray;
-  color:white;
+
+label {
+  color: white;
+  width: auto;
+  height: auto;
+  background-color: black;
 }
-img{
-  margin:0px;
-  height:40px;
+
+#label1 {
+  background-color: gray;
+  color: white;
 }
-#contact{
-  size:40px;
+
+img {
+  height: 40px;
 }
