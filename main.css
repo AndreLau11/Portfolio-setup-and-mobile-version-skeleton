@@ -4,6 +4,8 @@ header {
   height: 35px;
   align-items: center;
   vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
 }
 
 div {
