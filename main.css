@@ -1,0 +1,45 @@
+header{
+    background-color: gray;
+    width: auto;
+    height: 35px;
+    size: 60 px;
+    align-items:center;
+    vertical-align: middle;
+}
+div{
+    color: orangered;
+    background-color:black;
+}
+
+body{
+    background-color:white;
+}
+
+h1{
+    align-items: center;
+}
+h2{
+    color: white;
+    width: auto;
+    height: auto;
+    background-color:black;
+}
+label{
+    color: white;
+    width: auto;
+    height: auto;
+    background-color:black;
+}
+#label1{
+    background-color:gray;
+    color: white;
+}
+
+img{
+    margin: 0px;
+    height: 40px;
+}
+
+#contact{
+    size: 40px;
+}
