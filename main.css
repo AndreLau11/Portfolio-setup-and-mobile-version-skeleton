@@ -1,35 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
 header {
-  background-color: gray;
+  background-color: #3C3A39;
   width: auto;
-  height: 35px;
-  align-items: center;
-  vertical-align: middle;
+  height: 50px;
+  padding: 10px;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
+  color: white;
+  align-items: center;
 }
 
 h1 {
-  color: orangered;
-  background-color: black;
+  color: #FF6B00;
   align-items: center;
+  margin-top: 80px;
+  margin-right: 24px;
+  margin-left: 24px;
 }
 
 body {
-  background-color: black;
+  background-color: #1C1A19
+  ;
 }
 
 h2 {
-  color: white;
+  color: #FFF5E1;
   width: auto;
   height: auto;
-  background-color: black;
+  margin-top: 40px;
+  margin-right: 24px;
+  margin-left: 24px;
 }
 
 p {
   color: white;
   width: auto;
   height: auto;
-  background-color: black;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 #label1 {
@@ -38,5 +51,9 @@ p {
 }
 
 img {
-  height: 40px;
+  height: 30px;
+}
+
+li {
+  margin-bottom: 100px;
 }
