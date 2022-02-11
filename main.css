@@ -1,58 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
-
 header {
   background-color: #3c3a39;
-  width: auto;
-  height: 50px;
-  padding: 10px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .navbar {
+  align-items: flex-end;
   display: flex;
   justify-content: space-between;
-  color: white;
-  align-items: center;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+ul {
+  display: inline-flex;
 }
 
 h1 {
   color: #ff6b00;
-  align-items: center;
-  margin-top: 80px;
-  margin-right: 24px;
-  margin-left: 24px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
 }
 
 body {
+  background-image: url(./images/Illustration.svg);
   background-color: #1c1a19;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
 }
 
 h2 {
   color: #fff5e1;
-  width: auto;
-  height: auto;
-  margin-top: 40px;
-  margin-right: 24px;
-  margin-left: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 0;
 }
 
 p {
   color: white;
-  width: auto;
-  height: auto;
-  margin-left: 24px;
-  margin-right: 24px;
-}
-
-#label1 {
-  background-color: gray;
-  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 img {
-  height: 30px;
+  height: 20px;
 }
 
 li {
-  margin-bottom: 100px;
+  margin-right: 20px;
+  list-style: none;
+}
+
+.socialmedia {
+  margin-left: -35px;
 }
