@@ -86,3 +86,46 @@ li {
 .socialmedia {
   margin-left: -35px;
 }
+
+.secondsection {
+  background-color: #FFFFFF;
+}
+
+.secondtitle {
+  font-family: Crete Round;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.secondmain {
+  width: auto;
+  height: auto;
+  left: auto;
+  top: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.secondp {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.secondmain {
+  width: 250px;
+  height: 200px;
+}
