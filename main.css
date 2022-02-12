@@ -22,7 +22,8 @@ header {
   margin-left: 30px;
 }
 
-.ulnavbar, .socialmedia {
+.ulnavbar,
+.socialmedia {
   display: inline-flex;
 }
 
@@ -70,7 +71,8 @@ h2 {
   margin: 12px 20px 0 20px;
 }
 
-.firstparagraph, .aboutmeparragraph {
+.firstparagraph,
+.aboutmeparragraph {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -90,16 +92,21 @@ li {
 }
 
 .socialmedia {
-  margin-left: -35px;
-  margin: 20px 20px 0 -20px;
+  margin: 20px 20px 0 -55px;
 }
 
 .storysection {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .underline {
   margin-left: -20px;
+  border: 1px solid #212121;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  height: 1px;
+  width: 100%;
 }
 
 .storytitle {
@@ -111,7 +118,7 @@ li {
   display: flex;
   align-items: center;
   color: #1c1a19;
-  justify-content:center; 
+  justify-content: center;
 }
 
 .storyimages2 {
@@ -126,7 +133,7 @@ li {
 }
 
 .storysubtitle {
-  font-family: Crete Round;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -137,7 +144,7 @@ li {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px 0;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -151,15 +158,6 @@ li {
   height: 20px;
 }
 
-.underline {
-  border: 1px solid #212121;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  height:1px;
-  width: 100%;
-}
-
 .projectsection {
   background-image: url(./images/SecondPage/background.svg);
   background-repeat: no-repeat;
@@ -168,7 +166,7 @@ li {
 }
 
 .projecttitle {
-  color: #ffffff;
+  color: #fff;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -181,7 +179,7 @@ li {
   margin: 24px 0 20px 20px;
 }
 
-.projectbutton  {
+.projectbutton {
   width: 100%;
   color: white;
   background-color: #ff6b00;
@@ -200,10 +198,12 @@ li {
   flex-grow: 0;
   margin: 0 20px 0 20px;
 }
+
 .skill {
   margin-left: -27px;
   display: inline-flex;
 }
+
 .skill-image-tag {
   width: 90px;
   height: 50px;
@@ -228,7 +228,7 @@ li {
 .secondmain {
   width: 100%;
   height: 100%;
-  margin-left:-15px;
+  margin-left: -15px;
 }
 
 .projectparagraph {
@@ -251,7 +251,7 @@ li {
 }
 
 .aboutmetitle {
-  font-family: Crete Round;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
@@ -272,60 +272,46 @@ li {
 .line {
   display: flex;
   flex-direction: row;
-  display: flex;
   justify-content: center;
   position: static;
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0px 12px;
+  color: #fff;
+  font-family: 'InaiMathi', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: center;
+  margin: 0 32px 30px -30px;
 }
 
 .source {
   display: flex;
   flex-direction: column;
-  color: #ffffff;
+  color: #fff;
 }
 
-.line {
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  order: 0;
-  margin-right: 20px;
-  font-family: InaiMathi;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 12px 30px -30px;
-}
-
-.linemage{
+.linemage {
   width: 15px;
   height: 15px;
 }
 
 .resourcesection {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .subline {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 43px;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   margin-bottom: 33px;
 }
