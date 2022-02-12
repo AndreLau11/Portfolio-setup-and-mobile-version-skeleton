@@ -22,8 +22,7 @@ header {
   margin-left: 30px;
 }
 
-.ulnavbar,
-.socialmedia {
+.ulnavbar {
   display: inline-flex;
 }
 
@@ -46,7 +45,7 @@ body {
   flex-direction: column;
 }
 
-section {
+div {
   padding: 120px 0;
 }
 
@@ -92,7 +91,8 @@ li {
 }
 
 .socialmedia {
-  margin: 20px 20px 0 -55px;
+  display: inline-flex;
+  margin: 20px 20px 0 0;
 }
 
 .storysection {
@@ -275,7 +275,7 @@ li {
   justify-content: center;
   position: static;
   flex: none;
-  order: 1;
+  order: 0;
   flex-grow: 0;
   color: #fff;
   font-family: 'InaiMathi', sans-serif;
