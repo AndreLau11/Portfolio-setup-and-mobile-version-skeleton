@@ -201,12 +201,20 @@ li {
 
 .skill {
   margin-left: -27px;
-  display: inline-flex;
+  /* display: inline-flex; */
 }
 
 .skill-image-tag {
   width: 90px;
   height: 50px;
+  float: right;
+  margin-right: 15px;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .skill-image-tag1 {
