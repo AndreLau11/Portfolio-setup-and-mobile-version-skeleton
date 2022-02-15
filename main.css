@@ -201,21 +201,14 @@ li {
 
 .skill {
   margin-left: -27px;
-  /* display: inline-flex; */
+  display: inline-flex;
 }
 
 .skill-image-tag {
   width: 90px;
   height: 50px;
-  float: right;
-  margin-right: 15px;
 }
 
-.clearfix::after{
-  content: "";
-  display: block;
-  clear: both;
-}
 
 .skill-image-tag1 {
   width: 45px;
@@ -322,4 +315,74 @@ li {
   align-items: center;
   justify-content: center;
   margin-bottom: 33px;
+}
+
+.informationsection {
+  background-color: white;
+  color: #172b4d;
+}
+
+.informationtitle {
+  display: flex;
+  justify-content:center;
+  color: #172b4d;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.informationbutton {
+  background-color: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px auto;
+  width: 131px;
+  height: 48px;
+}
+
+.textinformation {
+  width: 100%;
+  margin: 30px 20px 10px 20px;
+}
+
+.textinformation input {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.underline2 {
+  border: 1px solid #212121;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  height: 1px;
+  width: 100%;
+}
+
+.undeline2line {
+  margin: 0 20px 0 20px;
+}
+
+.textareainformation {
+  margin: 30px 20px 10px 20px;
+  width: 90%;
+}
+
+.socialmedia2 {
+  display: flex;
+  flex-direction: row;
 }
