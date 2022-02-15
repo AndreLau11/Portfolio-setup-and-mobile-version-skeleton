@@ -46,7 +46,7 @@
                 <li class="img3"><a href=""><img class="skill-image-tag1" src="./images/SecondPage/Tag2.png" alt=""></a></li>
                 <li class="img4"><a href=""><img class="skill-image-tag1" src="./images/SecondPage/Tag3.png" alt=""></a></li>
             </ul>
-            <p><button class="second">See Project</button></p>
+            <p><button type="submit" class="second">See Project</button></p>
         </div>
 
         <div class="projectsection">
@@ -57,13 +57,13 @@
                 <li><a href=""><img class="skill-image-tag" src="./images/project/Tag1.png" alt=""></a></li>
                 <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png" alt=""></a></li>
             </ul>
-            <button class="projectbutton">See Project</button>
+            <button type="submit" class="projectbutton">See Project</button>
         </div>
 
         <div class="aboutmesection">
             <h2 class="aboutmetitle">About me</h2>
             <p class="aboutmeparragraph">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-            <p><button class="aboutmebutton">Get My Resume</button></p>
+            <p><button type="submit" class="aboutmebutton">Get My Resume</button></p>
         </div>
 
         <div class="resourcesection">
@@ -91,24 +91,26 @@
                 <li class="subline">Terminal</li>
             </ul>
         </div>
-        <div class="informationsection">
-            <h2 class="informationtitle">I'm always interested in hearing about new proijects, so if you'd like to chant plese get in</h2>
-            <p class="textinformation"><input type="text" placeholder="Full Name"></p>
-            <p class="undeline2line"><img class="underline2" src="./images/information/Container.png" alt=""></p>
-            <p class="textinformation"><input type="text" placeholder="Email address"></p>
-            <p class="undeline2line"><img class="underline2" src="./images/information/Container.png" alt=""></p>
-            <textarea class="textareainformation" name="" id="" cols= "35" rows="10" placeholder="Add your text"></textarea>
-            <button class="informationbutton">Get in touch</button>
-            <img src="./images/Rectangle 42 (1).png" alt="gray_line">
-            <ul class="socialmedia2">
-                <li><a href=""><img src="./images/github.svg" alt="githublogo"></a></li>
-                <li><a href=""><img src="./images/Linkedinicon.svg" alt=""></a></li>
-                <li><a href=""><img src="./images/angellist.svg" alt="angellist"></a></li>
-                <li><a href=""><img src="./images/twitter.svg" alt="twitterlogo"></a></li>
-                <li><a href=""><img src="./images/medium.svg" alt="mediumlogo"></a></li>
-            </ul>
-            <img src="./images/Shape.png" alt="black_line">
-        </div>
+        <form action="https://formspree.io/f/mbjwogoo" method="get">
+            <div class="informationsection">
+                <h2 class="informationtitle">I'm always interested in hearing about new proijects, so if you'd like to chant plese get in</h2>
+                <p class="textinformation"><input type="text" placeholder="Full Name" max="30" required></p>
+                <p class="undeline2line"><img class="underline2" src="./images/information/Container.png" alt=""></p>
+                <p class="textinformation"><input type="email" placeholder="Email address" required></p>
+                <p class="undeline2line"><img class="underline2" src="./images/information/Container.png" alt=""></p>
+                <textarea class="textareainformation" name="enter-text-here" maxlength="500" rows="10" placeholder="Add your text" required></textarea>
+                <button type="submit" class="informationbutton">Get in touch</button>
+                <img class="gray-line" src="./images/Rectangle.png" alt="gray_line">
+                <ul class="socialmedia2">
+                    <li><a href=""><img src="./images/github.svg" alt="githublogo"></a></li>
+                    <li><a href=""><img src="./images/Linkedinicon.svg" alt=""></a></li>
+                    <li><a href=""><img src="./images/angellist.svg" alt="angellist"></a></li>
+                    <li><a href=""><img src="./images/twitter.svg" alt="twitterlogo"></a></li>
+                    <li><a href=""><img src="./images/medium.svg" alt="mediumlogo"></a></li>
+                </ul>
+                <img class="black-line" src="./images/Shape.png" alt="black_line">
+            </div>
+        </form>
     </section>
 </body>
 </html>

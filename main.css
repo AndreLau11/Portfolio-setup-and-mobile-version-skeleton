@@ -12,6 +12,13 @@ header {
   top: 0;
 }
 
+body {
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 .navbar {
   align-items: flex-end;
   display: flex;
@@ -39,11 +46,6 @@ h1 {
   margin: 0 20px 0 20px;
 }
 
-body {
-  background-color: #1c1a19;
-  display: flex;
-  flex-direction: column;
-}
 
 div {
   padding: 120px 0;
@@ -320,6 +322,7 @@ li {
 .informationsection {
   background-color: white;
   color: #172b4d;
+  padding-bottom: 8px;
 }
 
 .informationtitle {
@@ -362,6 +365,7 @@ li {
 .textinformation input {
   margin: 0 auto;
   width: 90%;
+  border: none;
 }
 
 .underline2 {
@@ -380,9 +384,25 @@ li {
 .textareainformation {
   margin: 30px 20px 10px 20px;
   width: 90%;
+  border: none;
+  background-color: #FBF8F7;
+  border-radius: 8px;
 }
 
 .socialmedia2 {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+.black-line {
+  display: block;
+  width: 134px;
+  height: 5px;
+  margin: 23px auto;
+}
+
+.gray-line {
+  width: 100%;
+  height: 1px;
 }
