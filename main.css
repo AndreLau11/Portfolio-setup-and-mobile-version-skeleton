@@ -46,7 +46,6 @@ h1 {
   margin: 0 20px 0 20px;
 }
 
-
 div {
   padding: 120px 0;
 }
@@ -182,23 +181,43 @@ li {
 }
 
 .projectbutton {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 10px;
+  color: #fff;
   width: 100%;
-  color: white;
+  height: 48px;
   background-color: #ff6b00;
-  height: 50px;
-  margin-top: 10px;
+  justify-content: center;
 }
 
 .aboutmebutton {
-  background-color: #ff6b00;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
+  position: static;
+  width: 161px;
+  height: 48px;
+  left: 24px;
+  top: 395px;
   flex: none;
   order: 2;
   flex-grow: 0;
-  margin: 0 20px 0 20px;
+  margin: 24px 20px;
+  font-size: 17px;
+  background-color: #ff6b00;
+  color: #fff;
 }
 
 .skill {
@@ -211,21 +230,11 @@ li {
   height: 50px;
 }
 
-
 .skill-image-tag1 {
   width: 45px;
   height: 25px;
   display: flex;
   justify-content: space-between;
-}
-
-.second {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  background-color: #ff6b00;
-  margin-left: 20px;
 }
 
 .secondmain {
@@ -243,7 +252,7 @@ li {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 24px 0 20px 20px;
+  margin: 24px 0 150px 20px;
   color: #f4f5f7;
 }
 
@@ -323,11 +332,12 @@ li {
   background-color: white;
   color: #172b4d;
   padding-bottom: 8px;
+  margin: 0 20px 0 20px;
 }
 
 .informationtitle {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -335,6 +345,7 @@ li {
   font-size: 32px;
   line-height: 44px;
   text-align: center;
+  margin: 0 0 30px 0;
 }
 
 .informationbutton {
@@ -357,13 +368,8 @@ li {
   height: 48px;
 }
 
-.textinformation {
-  width: 100%;
-  margin: 30px 20px 10px 20px;
-}
-
-.textinformation input {
-  margin: 0 auto;
+.informationsection input {
+  margin: 0 25px 0 25px;
   width: 90%;
   border: none;
 }
@@ -374,7 +380,9 @@ li {
   order: 1;
   flex-grow: 0;
   height: 1px;
-  width: 100%;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
 }
 
 .undeline2line {
@@ -385,7 +393,7 @@ li {
   margin: 30px 20px 10px 20px;
   width: 90%;
   border: none;
-  background-color: #FBF8F7;
+  background-color: #fbf8f7;
   border-radius: 8px;
 }
 
@@ -405,4 +413,21 @@ li {
 .gray-line {
   width: 100%;
   height: 1px;
+}
+
+.storybotton {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 20px 20px 0 20px;
+  background-color: #ff6b00;
+  width: 124px;
+  height: 48px;
+  color: #fff;
 }
