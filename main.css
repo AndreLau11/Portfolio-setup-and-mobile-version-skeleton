@@ -201,6 +201,21 @@ li {
   justify-content: center;
 }
 
+.projectbutton:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.projectbutton:pressed {
+  background: #e05304;
+}
+
+.projectbutton:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
 .aboutmebutton {
   display: flex;
   flex-direction: row;
@@ -218,6 +233,21 @@ li {
   font-size: 17px;
   background-color: #ff6b00;
   color: #fff;
+}
+
+.aboutmebutton:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.aboutmebutton:pressed {
+  background: #e05304;
+}
+
+.aboutmebutton:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 .skill {
@@ -368,6 +398,23 @@ li {
   height: 48px;
 }
 
+.informationbutton:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.informationbutton:pressed {
+  background: #e05304;
+}
+
+.informationbutton:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+
+
 .informationsection input {
   margin: 0 25px 0 25px;
   width: 90%;
@@ -430,4 +477,19 @@ li {
   width: 124px;
   height: 48px;
   color: #fff;
+}
+
+.storybotton:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.storybotton:pressed {
+  background: #e05304;
+}
+
+.staybotton:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
