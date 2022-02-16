@@ -29,8 +29,18 @@ body {
   margin-left: 30px;
 }
 
+.email {
+  width: 22px;
+  height: auto;
+}
+
+.navbar2 h3 {
+  margin: 0 10px 0 10px;
+}
+
 .ulnavbar {
-  display: inline-flex;
+  align-self: center;
+  margin-right: 20px;
 }
 
 h1 {
@@ -46,14 +56,14 @@ h1 {
   margin: 0 20px 0 20px;
 }
 
-div {
-  padding: 120px 0;
-}
-
 .firstsection {
   background-image: url(./images/Illustration.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
+  padding: 120px 0 120px 20px;
+  @media (min-width: 500px) {
+    background-color: #green;
+  }
 }
 
 h2 {
@@ -98,6 +108,7 @@ li {
 
 .storysection {
   background-color: #fff;
+  padding: 70px 20px 70px 20px;
 }
 
 .underline {
@@ -125,6 +136,13 @@ li {
 .storyimages2 {
   display: flex;
   justify-content: space-around;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  margin: 10px 0 10px 0;
 }
 
 .storyparragraph {
@@ -163,7 +181,7 @@ li {
   background-image: url(./images/SecondPage/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 0;
+  padding: 120px 0 0 0;
 }
 
 .projecttitle {
@@ -174,7 +192,6 @@ li {
   font-size: 56px;
   line-height: 64px;
   flex: none;
-  padding-left: 10px;
   order: 0;
   flex-grow: 0;
   margin: 24px 0 20px 20px;
@@ -251,8 +268,8 @@ li {
 }
 
 .skill {
-  margin-left: -27px;
-  display: inline-flex;
+  display: flex;
+  justify-content:space-around;
 }
 
 .skill-image-tag {
@@ -290,6 +307,7 @@ li {
   background-image: url(./images/aboutme/Frame.png);
   background-repeat: no-repeat;
   background-position: right bottom;
+  padding: 120px 20px 120px 20px;
 }
 
 .aboutmetitle {
@@ -303,7 +321,6 @@ li {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0 20px 0 20px;
 }
 
 .resourceimages {
@@ -344,6 +361,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 120px 0 120px 0;
 }
 
 .subline {
@@ -361,8 +379,7 @@ li {
 .informationsection {
   background-color: white;
   color: #172b4d;
-  padding-bottom: 8px;
-  margin: 0 20px 0 20px;
+  padding: 120px 20px 8px 20px;
 }
 
 .informationtitle {
@@ -455,7 +472,8 @@ li {
   margin: 23px auto;
 }
 
-.gray-line {
+.gray-line,
+.aboutmegray-line {
   width: 100%;
   height: 1px;
 }
@@ -490,4 +508,112 @@ li {
 .staybotton:disabled {
   background: #f4f1f0;
   color: #5b5957;
+}
+
+@media screen and (min-width: 600px) {
+  .ulnavbar {
+    display: none;
+  }
+  
+  .firstsection {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./images/Desktop/first-page/Illustration-header.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 300px;
+    padding: 120px 40px 40px 40px;
+  }
+
+  .firstsection-column2 {
+    order: -1;
+    width: 10%;
+    height: 100%;
+    align-self: center;
+  }
+
+  .firstsection-column1 {
+    width: 55%;
+    align-self: center;
+    padding-top: 7  0px;
+  }
+
+  .socialmedia {
+    flex-direction: column;
+    padding: 10px 0 0 0;
+    margin: 10px 0 10px 0 ;
+  }
+
+  .navbar2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    padding-right: 20px;
+    align-self: center;
+  }
+
+  .aboutmesection {
+    background-image: url(./images/Desktop/about-page/illustration-about\ me.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 350px;
+    padding: 40px;
+  }
+
+  .resourcesection {
+    font-size: 20px;
+    padding: 40px;
+    justify-content: space-around;
+  }
+
+  .aboutmesection-column1 {
+    width: 60%;
+  }
+
+  .resourcesection {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .resourcesection-column1 {
+    align-self: flex-start;
+  }
+
+  .subline {
+    justify-content: flex-start;
+    margin: 5px 0 5px 0;
+  }
+
+  .informationsection {
+    padding: 120px 40px 5px 40px;
+  }
+
+  .informationsection-columns {
+    display: flex;
+    flex-direction: row;
+    }
+
+  .informationsection-column1 {
+    width: 40%;
+  }
+
+  .informationsection-column2 {
+    width: 60%;
+  }
+
+  .informationbutton {
+    display: inline-block;
+    align-self: flex-start;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .navbar2 {
+    display: none;
+  }
+
+  .aboutmegray-line {
+    display: none;
+  }
 }
