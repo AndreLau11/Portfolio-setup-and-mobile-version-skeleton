@@ -89,10 +89,6 @@ h2 {
   margin: 12px 20px 50px 20px;
 }
 
-img {
-  height: 20px;
-}
-
 li {
   margin-right: 20px;
   list-style: none;
@@ -528,7 +524,8 @@ li {
 }
 
 img {
-  transition: all 0.5 ease-out;
+  transition: all 0.5s ease-out;
+  height: 20px;
 }
 
 img:hover {
