@@ -229,6 +229,7 @@ li {
   height: 48px;
   background-color: #ff6b00;
   justify-content: center;
+  transition: all 0.5s ease-in;
 }
 
 .projectbutton:hover,
@@ -266,6 +267,7 @@ li {
   font-size: 17px;
   background-color: #ff6b00;
   color: #fff;
+  transition: all 0.5s ease-in;
 }
 
 .aboutmebutton:hover {
@@ -430,6 +432,7 @@ li {
   margin: 24px auto;
   width: 131px;
   height: 48px;
+  transition: all 0.5s ease-in;
 }
 
 .informationbutton:hover {
@@ -510,6 +513,7 @@ li {
   width: 124px;
   height: 48px;
   color: #fff;
+  transition: all 0.5s ease-in;
 }
 
 .storybotton:hover {
