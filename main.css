@@ -527,7 +527,7 @@ li {
   color: #5b5957;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
   .ulnavbar {
     display: none;
   }
@@ -773,7 +773,7 @@ li {
   } */
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 991px) {
   .navbar2 {
     display: none;
   }
