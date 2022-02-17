@@ -527,6 +527,14 @@ li {
   color: #5b5957;
 }
 
+img {
+  transition: all 0.5 ease-out;
+}
+
+img:hover {
+  transform: scale(1.04);
+}
+
 @media screen and (min-width: 992px) {
   .ulnavbar {
     display: none;
