@@ -15,7 +15,6 @@ This is a description of the porject I have done so far and is easy for you to c
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
