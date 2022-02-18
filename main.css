@@ -19,6 +19,11 @@ body {
   margin: 0;
 }
 
+button {
+  border: none;
+  justify-content: center;
+}
+
 .navbar {
   align-items: flex-end;
   display: flex;
@@ -78,7 +83,7 @@ h2 {
   margin: 12px 20px 0 20px;
 }
 
-.firstparagraph,
+.firstsectionparagraph,
 .aboutmeparragraph {
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -126,15 +131,19 @@ li {
   justify-content: center;
 }
 
+.storyimages-underline {
+  width: 100%;
+}
+
 .storyimages2 {
   display: flex;
   justify-content: space-around;
 }
 
 .storyimage-title {
-  width: 90%;
+  width: 100%;
   height: auto;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 100px 20px;
 }
 
 .img1,
@@ -191,6 +200,16 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px 0 0 0;
+  transition: all 0.2s ease-in;
+}
+
+.projectsection0:hover,
+.projectsection1:hover,
+.projectsection2:hover,
+.projectsection3:hover,
+.projectsection4:hover,
+.projectsection5:hover {
+  transform: scale(1.05);
 }
 
 .projecttitle {
@@ -233,11 +252,13 @@ li {
   background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
+  color: #f55800;
 }
 
 .projectbutton:active,
 .projectbutton1:active {
   background: #e05304;
+  color: #fff5e1;
 }
 
 .projectbutton:disabled,
@@ -270,10 +291,12 @@ li {
   background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
+  color: #f55800;
 }
 
 .aboutmebutton:active {
   background: #e05304;
+  color: #fff5e1;
 }
 
 .aboutmebutton:disabled {
@@ -426,7 +449,7 @@ li {
   order: 0;
   flex-grow: 0;
   margin: 24px auto;
-  width: 131px;
+  width: 122px;
   height: 48px;
   transition: all 0.5s ease-in;
 }
@@ -435,10 +458,12 @@ li {
   background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
+  color: #f55800;
 }
 
 .informationbutton:active {
   background: #e05304;
+  color: #fff5e1;
 }
 
 .informationbutton:disabled {
@@ -516,10 +541,12 @@ li {
   background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
+  color: #f55800;
 }
 
 .storybotton:active {
   background: #e05304;
+  color: #fff5e1;
 }
 
 .staybotton:disabled {
@@ -528,15 +555,35 @@ li {
 }
 
 img {
-  transition: all 0.5s ease-out;
+  transition: all 0.2s ease-out;
   height: 20px;
 }
 
 img:hover {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 500px) {
+  p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .firstsectiontitle {
+    font-size: 72px;
+    line-height: 81px;
+  }
+
+  .firstsectionsubtitle {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .firstsectionparagraph {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
   .ulnavbar {
     display: none;
   }
@@ -548,7 +595,7 @@ img:hover {
     background-repeat: no-repeat;
     background-position: right;
     background-size: 300px;
-    padding: 120px 40px 40px 40px;
+    padding: 143px 143px 143px 48px;
   }
 
   .firstsection-column2 {
@@ -559,7 +606,7 @@ img:hover {
   }
 
   .firstsection-column1 {
-    width: 55%;
+    width: 65%;
     align-self: center;
     padding-top: 70px;
   }
@@ -567,7 +614,7 @@ img:hover {
   .socialmedia {
     flex-direction: column;
     padding: 10px 0 0 0;
-    margin: 10px 0 10px 0;
+    row-gap: 15px;
   }
 
   .navbar2 {
@@ -583,12 +630,19 @@ img:hover {
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 350px;
-    padding: 40px;
+    padding: 143px 143px 0 143px;
+  }
+
+  .aboutmetitle,
+  .aboutmeparragraph {
+    margin: 0 0 20px 0;
+    font-size: 72px;
+    line-height: 81px;
   }
 
   .resourcesection {
     font-size: 20px;
-    padding: 40px;
+    padding: 143px;
     justify-content: space-around;
     display: flex;
     flex-direction: row;
@@ -608,7 +662,7 @@ img:hover {
   }
 
   .informationsection {
-    padding: 120px 40px 5px 40px;
+    padding: 143px 143px 10px 143px;
   }
 
   .informationsection-columns {
@@ -617,17 +671,18 @@ img:hover {
   }
 
   .informationsection-column1 {
-    width: 40%;
+    width: 45%;
   }
 
   .informationsection-column2 {
-    width: 60%;
+    width: 55%;
   }
 
   .informationbutton {
     display: inline-block;
     align-self: flex-start;
     margin-left: 20px;
+    margin-bottom: 143px;
   }
 
   .storytitle,
@@ -647,6 +702,8 @@ img:hover {
   .storyimages {
     display: inline-block;
     justify-content: flex-start;
+    padding: 0;
+    margin: 0;
   }
 
   .projectsection1,
@@ -664,18 +721,20 @@ img:hover {
   }
 
   .storysection-column1 {
-    width: 55%;
+    width: 70%;
   }
 
   .storysection-column2 {
     width: 45%;
   }
 
+  .programmingcontainer-row1,
   .programmingcontainer-row2,
   .programmingcontainer-row3 {
     display: flex;
     flex-direction: row;
-    margin: 0 20px 0 20px;
+    gap: 24px;
+    margin-bottom: 24px;
   }
 
   .projectsection0,
@@ -684,27 +743,35 @@ img:hover {
   .projectsection3,
   .projectsection4,
   .projectsection5 {
-    width: 30%;
-    height: 200px;
-    margin: 10px;
+    width: 33.33%;
+    height: 432px;
   }
 
   .projecttitle {
-    font-size: 20px;
-    line-height: 22px;
-    margin: -10px;
+    font-size: 32px;
+    line-height: 44px;
+    padding: 0;
+    margin: 50% 16px 0 16px;
   }
 
   .projectparagraph {
-    font-size: 13px;
-    line-height: 15px;
-    padding: -40px;
-    margin: -27px;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 0;
+    margin: 16px;
   }
 
   .programmingcontainer {
     background-color: #fff;
-    padding-bottom: 50px;
+    padding: 141px;
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+
+  .skill {
+    padding: 0;
+    margin: 16px;
+    justify-content: flex-start;
   }
 
   .storysection {
@@ -713,6 +780,46 @@ img:hover {
 
   .storyimages2 {
     padding-left: 0;
+    justify-content: flex-start;
+    margin: 20px 0;
+    gap: 12px;
+  }
+
+  .aboutmebutton {
+    margin: 40px 0 143px 0;
+  }
+
+  .storybotton,
+  .storyparragraph,
+  .secondmain {
+    margin: 0;
+  }
+
+  .storyparragraph {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .storysubtitle {
+    margin: 0 0 24px 0;
+  }
+
+  .storyimages-underline,
+  .underline {
+    display: none;
+  }
+
+  .aboutmeparragraph {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .informationtitle {
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    text-align: left;
+    width: 410px;
   }
 
   /* .programmingcontainer {
@@ -782,7 +889,7 @@ img:hover {
   } */
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 499px) {
   .navbar2 {
     display: none;
   }
