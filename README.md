@@ -2,9 +2,11 @@
 
 # Project Name
 
-> Portfolio-setup-and-mobile-version-skeleton.
+> Portfolio
 
 This is a description of the porject I have done so far and is easy for you to check.
+
+It is a resumey of what I've been capable of doing so far and it gets better with the passed of the time.
 
 
 ## Built With
@@ -39,20 +41,20 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 **Hectot Andre Lau**
 
-- GitHub: Hector Andre Lau (https://github.com/AndreLau11)
-- Twitter: Hector Andre Lau (https://twitter.com/HectorAndreLau)
-- LinkedIn: Hector Andre Lau (https://www.linkedin.com/in/h%C3%A9ctor-andr%C3%A9-lau-estrada-b4947795/)
+- GitHub: [@AndreLau11](https://github.com/AndreLau11)
+- Twitter: [@HectorAndreLau](https://twitter.com/HectorAndreLau)
+- LinkedIn: [@HectorAndreLauEstrada](https://www.linkedin.com/in/h%C3%A9ctor-andr%C3%A9-lau-estrada-b4947795/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/AndreLau11/Portfolio-setup-and-mobile-version-skeleton/issues).
-
+}
 ## Show your support
 
 Give a ⭐️ if you like this project!
