@@ -30,6 +30,15 @@ button {
   justify-content: space-between;
 }
 
+.navbar2 > a {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
+.navbar2 > a:hover {
+  transform: scale(1.05);
+}
+
 .logo {
   margin-left: 30px;
 }
