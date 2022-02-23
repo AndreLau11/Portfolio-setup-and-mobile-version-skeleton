@@ -17,7 +17,7 @@ It is a resumey of what I've been capable of doing so far and it gets better wit
 
 ## Live Demo (if available)
 
-Link: (https://andrelau11.github.io/Portfolio-setup-and-mobile-version-skeleton/)
+
 
 ## Getting Started
 
