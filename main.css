@@ -251,7 +251,7 @@ li {
   color: #fff;
   width: 100%;
   height: 48px;
-  background-color: #ff6b00;
+  background-color: #f55800;
   justify-content: center;
   transition: all 0.5s ease-in;
 }
@@ -291,7 +291,7 @@ li {
   flex-grow: 0;
   margin: 24px 20px;
   font-size: 17px;
-  background-color: #ff6b00;
+  background-color: #f55800;
   color: #fff;
   transition: all 0.5s ease-in;
 }
@@ -305,7 +305,7 @@ li {
 
 .aboutmebutton:active {
   background: #e05304;
-  color: #fff5e1;
+  color: #f4f1f0;
 }
 
 .aboutmebutton:disabled {
@@ -443,7 +443,7 @@ li {
 }
 
 .informationbutton {
-  background-color: #ff6b00;
+  background-color: #f55800;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -472,7 +472,7 @@ li {
 
 .informationbutton:active {
   background: #e05304;
-  color: #fff5e1;
+  color: #f4f1f0;
 }
 
 .informationbutton:disabled {
