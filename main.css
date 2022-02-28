@@ -1,7 +1,7 @@
 header {
   background-color: #3c3a39;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -24,6 +24,10 @@ button {
   justify-content: center;
 }
 
+img {
+  transition: all 0.2s ease-out;
+}
+
 .navbar {
   align-items: flex-end;
   display: flex;
@@ -33,6 +37,18 @@ button {
 .navbar2 > a {
   text-decoration: none;
   color: #fff5e1;
+}
+
+.mobile__nav > li > a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  text-decoration: none;
 }
 
 .navbar2 > a:hover {
@@ -57,9 +73,47 @@ button {
   margin-right: 20px;
 }
 
+.mobile__nav-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #3c3a39;
+  mix-blend-mode: normal;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.hidden {
+  display: none;
+}
+
+.mobile__nav-container img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 34px;
+  right: 24px;
+}
+
+.mobile__nav {
+  width: 90%;
+  position: absolute;
+  top: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 34px;
+}
+
+.mobile__nav li {
+  width: 85%;
+  border-bottom: 2px solid #dfe1e6;
+  padding: 24px 24px;
+}
+
 h1 {
   color: #ff6b00;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -79,7 +133,7 @@ h1 {
 
 h2 {
   color: #fff5e1;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -95,7 +149,7 @@ h2 {
 .firstsectionparagraph,
 .aboutmeparragraph {
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -103,7 +157,7 @@ h2 {
   margin: 12px 20px 50px 20px;
 }
 
-li {
+#mobile__nav > li {
   margin-right: 20px;
   list-style: none;
 }
@@ -129,7 +183,7 @@ li {
 }
 
 .storytitle {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -169,7 +223,7 @@ li {
 }
 
 .storysubtitle {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -223,7 +277,7 @@ li {
 
 .projecttitle {
   color: #fff;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -236,7 +290,7 @@ li {
 
 .projectbutton,
 .projectbutton1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -338,7 +392,7 @@ li {
 }
 
 .projectparagraph {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -358,7 +412,7 @@ li {
 }
 
 .aboutmetitle {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
@@ -384,7 +438,7 @@ li {
   order: 0;
   flex-grow: 0;
   color: #fff;
-  font-family: 'InaiMathi', sans-serif;
+  font-family: "InaiMathi", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -412,7 +466,7 @@ li {
 }
 
 .subline {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -433,7 +487,7 @@ li {
   display: flex;
   justify-content: center;
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -536,7 +590,7 @@ li {
 }
 
 .storybotton {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -568,10 +622,6 @@ li {
 .staybotton:disabled {
   background: #f4f1f0;
   color: #5b5957;
-}
-
-img {
-  transition: all 0.2s ease-out;
 }
 
 img:hover {
@@ -878,5 +928,10 @@ img:hover {
   .projectbutton1,
   .completename {
     display: none;
+  }
+
+  .socialmedia2-img {
+    width: 40px;
+    height: auto;
   }
 }
