@@ -66,6 +66,10 @@ button {
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
 }
 
+.hidden {
+  display: none;
+}
+
 .mobile__nav-container img {
   width: 24px;
   height: 24px;
@@ -924,5 +928,10 @@ img:hover {
   .projectbutton1,
   .completename {
     display: none;
+  }
+
+  .socialmedia2-img {
+    width: 40px;
+    height: auto;
   }
 }

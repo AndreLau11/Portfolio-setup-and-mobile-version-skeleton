@@ -32,12 +32,12 @@
 
 <body>
     <header>
-        <div class="mobile__nav-container">
-            <img src="./images/icn-close.svg" alt="close button" />
+        <div id="mobile-nav" class="mobile__nav-container hidden">
+            <img id="close-menu" src="./images/icn-close.svg" alt="close button" />
             <ul class="mobile__nav">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a id="mobile__nav_portfolio" href="#portfolio">Portfolio</a></li>
+                <li><a id="mobile__nav_about" href="#aboutmeProject">About</a></li>
+                <li><a id="mobile__nav_contact" href="#informationsectionProject">Contact</a></li>
             </ul>
         </div>
         <nav class="navbar">
@@ -56,7 +56,7 @@
                 </a>
                 <img class="email" src="./images/Desktop/first-page/Disabled.png" alt="email button">
             </div>
-            <img class="ulnavbar" src="./images/Union.svg" alt="Menu button">
+            <img id="navbar-hamburger" class="ulnavbar" src="./images/Union.svg" alt="Menu button">
         </nav>
     </header>
     <section>
@@ -83,7 +83,7 @@
         </div>
         <div class="programmingcontainer">
             <div class="programmingcontainer-row1">
-                <div class="storysection">
+                <div id="portfolio" class="storysection">
                     <h2 class="storytitle">My Recent Work</h2>
                     <img class="storyimage-title" src="./images/Desktop/story-page/Title.svg" alt="">
                     <div class="storysection-columns">
@@ -213,7 +213,7 @@
             </div>
         </div>
 
-        <div class="aboutmesection">
+        <div id="aboutmeProject" class="aboutmesection">
             <div class="aboutmesection-column1">
                 <h2 class="aboutmetitle">About me</h2>
                 <p class="aboutmeparragraph">Hello I’m a software developer! I can help you build a product , feature or
@@ -258,7 +258,7 @@
             </div>
         </div>
 
-        <div class="informationsection">
+        <div id="informationsectionProject" class="informationsection">
             <div class="informationsection-columns">
                 <div class="informationsection-column1">
                     <h2 class="informationtitle">I'm always interested in hearing about new projects, so if you'd like
@@ -308,6 +308,7 @@
             <img class="black-line" src="./images/Shape.png" alt="">
         </div>
     </section>
+    <script src='main.js'></script>
+    
 </body>
-
 </html>
