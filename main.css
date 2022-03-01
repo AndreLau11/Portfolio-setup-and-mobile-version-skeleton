@@ -699,6 +699,7 @@ h2 {
   height: 100%;
   background: rgb(0, 0, 0, 0.03);
   backdrop-filter: blur(16px);
+  width: 100%;
 }
 
 img:hover {
@@ -1022,5 +1023,32 @@ img:hover {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .projectdetails-image img {
+    width: 100% !important;
+    height: auto !important;
+    flex: 1 auto;
+  }
+
+  .projectdetails {
+    margin: 50px 35px;
+  }
+
+  .projectdetails-body {
+    max-width: 400px;
+  }
+
+  .projectdetails-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .projectdetails-buttons {
+    justify-content: space-evenly;
   }
 }
