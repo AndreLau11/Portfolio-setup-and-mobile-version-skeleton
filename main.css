@@ -28,6 +28,10 @@ img {
   transition: all 0.2s ease-out;
 }
 
+ul {
+  list-style: none;
+}
+
 .navbar {
   align-items: flex-end;
   display: flex;
@@ -165,6 +169,7 @@ h2 {
 .socialmedia {
   display: inline-flex;
   margin: 20px 20px 0 0;
+  gap: 20px;
 }
 
 .storysection {
@@ -569,6 +574,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  list-style: none;
 }
 
 .socialmedia2-img {
@@ -623,6 +629,59 @@ h2 {
   background: #f4f1f0;
   color: #5b5957;
 }
+
+.projectdetails {
+  background: #fff;
+  padding: 20px;
+}
+
+.projectdetails-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.projectdetails-paragraph {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+}
+
+.projectdetails-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+
+.projectdetails-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projectdetails-content > div > img {
+  width: 100%;
+  height: auto;
+}
+
+.projectdetails-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.projectdetails-buttons > li > button {
+  background-color: #c75000;
+  color: #fff;
+  width: 159px;
+  height: 48px;
+  font-size: 17px;
+  line-height: 24px;
+} 
 
 img:hover {
   transform: scale(1.05);
@@ -680,6 +739,7 @@ img:hover {
     flex-direction: column;
     padding: 10px 0 0 0;
     row-gap: 15px;
+    list-style: none;
   }
 
   .navbar2 {
@@ -762,6 +822,7 @@ img:hover {
   .storysection-columns {
     display: flex;
     flex-direction: row;
+    gap: 20px;
   }
 
   .projectbutton {
@@ -773,6 +834,7 @@ img:hover {
     justify-content: flex-start;
     padding: 0;
     margin: 0;
+    list-style: none;
   }
 
   .projectsection1,
@@ -814,6 +876,7 @@ img:hover {
   .projectsection5 {
     width: 33.33%;
     height: 432px;
+    padding: 0;
   }
 
   .projecttitle {
@@ -852,6 +915,7 @@ img:hover {
     justify-content: flex-start;
     margin: 20px 0;
     gap: 12px;
+    list-style: none;
   }
 
   .aboutmebutton {
@@ -915,6 +979,8 @@ img:hover {
   .lastname {
     width: 50%;
   }
+
+  
 }
 
 @media screen and (max-width: 991px) {
@@ -933,5 +999,10 @@ img:hover {
   .socialmedia2-img {
     width: 40px;
     height: auto;
+  }
+
+  .projectdetails-content {
+    display: flex;
+    flex-direction: row;
   }
 }
