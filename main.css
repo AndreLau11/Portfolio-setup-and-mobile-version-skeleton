@@ -1,7 +1,7 @@
 header {
   background-color: #3c3a39;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -117,7 +117,7 @@ ul {
 
 h1 {
   color: #ff6b00;
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -137,7 +137,7 @@ h1 {
 
 h2 {
   color: #fff5e1;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -153,7 +153,7 @@ h2 {
 .firstsectionparagraph,
 .aboutmeparragraph {
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -188,7 +188,7 @@ h2 {
 }
 
 .storytitle {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -228,7 +228,7 @@ h2 {
 }
 
 .storysubtitle {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -282,7 +282,7 @@ h2 {
 
 .projecttitle {
   color: #fff;
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -295,7 +295,7 @@ h2 {
 
 .projectbutton,
 .projectbutton1 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -397,7 +397,7 @@ h2 {
 }
 
 .projectparagraph {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -417,7 +417,7 @@ h2 {
 }
 
 .aboutmetitle {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
@@ -443,7 +443,7 @@ h2 {
   order: 0;
   flex-grow: 0;
   color: #fff;
-  font-family: "InaiMathi", sans-serif;
+  font-family: 'InaiMathi', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -471,7 +471,7 @@ h2 {
 }
 
 .subline {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -492,7 +492,7 @@ h2 {
   display: flex;
   justify-content: center;
   color: #172b4d;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -503,7 +503,7 @@ h2 {
 
 .informationbutton {
   background-color: #c75000;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -596,7 +596,7 @@ h2 {
 }
 
 .storybotton {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -633,6 +633,11 @@ h2 {
 .projectdetails {
   background: #fff;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 24px 16px;
 }
 
 .projectdetails-title {
@@ -653,25 +658,25 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  row-gap: 20px;
+  gap: 8px;
+  padding: 0;
 }
 
 .projectdetails-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .projectdetails-content > div > img {
-  width: 100%;
-  height: auto;
+  width: 311px;
+  height: 220px;
 }
 
 .projectdetails-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  gap: 20px;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .projectdetails-buttons > li > button {
@@ -681,7 +686,20 @@ h2 {
   height: 48px;
   font-size: 17px;
   line-height: 24px;
-} 
+}
+
+.popup-modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: auto;
+  right: auto;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.03);
+  backdrop-filter: blur(16px);
+}
 
 img:hover {
   transform: scale(1.05);
@@ -979,8 +997,6 @@ img:hover {
   .lastname {
     width: 50%;
   }
-
-  
 }
 
 @media screen and (max-width: 991px) {
@@ -1003,6 +1019,8 @@ img:hover {
 
   .projectdetails-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 }
