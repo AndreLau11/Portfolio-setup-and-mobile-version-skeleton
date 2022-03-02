@@ -13,7 +13,7 @@ header {
 }
 
 body {
-  background-color: #1c1a19;
+  background-color: #1c1a19 !important;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -643,6 +643,8 @@ h2 {
 .projectdetails-title {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .projectdetails-paragraph {
@@ -844,10 +846,6 @@ img:hover {
     gap: 20px;
   }
 
-  .projectbutton {
-    display: none;
-  }
-
   .storyimages {
     display: inline-block;
     justify-content: flex-start;
@@ -896,13 +894,25 @@ img:hover {
     width: 33.33%;
     height: 432px;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .projectsection0 > ul,
+  .projectsection1 > ul,
+  .projectsection2 > ul,
+  .projectsection3 > ul,
+  .projectsection4 > ul,
+  .projectsection5 > ul {
+    order: 3;
   }
 
   .projecttitle {
     font-size: 32px;
     line-height: 44px;
     padding: 0;
-    margin: 50% 16px 0 16px;
+    margin: 0 16px 0 16px;
   }
 
   .projectparagraph {
@@ -923,6 +933,7 @@ img:hover {
     padding: 0;
     margin: 16px;
     justify-content: flex-start;
+    gap: 10px;
   }
 
   .storysection {
@@ -1037,6 +1048,14 @@ img:hover {
     margin: 50px 35px;
   }
 
+  .projectbutton {
+    display: none;
+  }
+
+  .projectbutton1 {
+    display: block;
+  }
+
   .projectdetails-body {
     max-width: 400px;
   }
@@ -1046,6 +1065,7 @@ img:hover {
     flex-direction: row;
     align-items: center;
     gap: 25px;
+    margin: 0 55px;
   }
 
   .projectdetails-buttons {

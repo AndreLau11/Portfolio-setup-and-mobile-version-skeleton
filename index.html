@@ -82,7 +82,7 @@
                 </ul>
             </div>
         </div>
-        <div class="programmingcontainer">
+        <div id="projects" class="programmingcontainer">
             <div class="programmingcontainer-row1">
                 <div id="portfolio" class="storysection">
                     <h2 class="storytitle">My Recent Work</h2>
@@ -119,7 +119,7 @@
                                             alt="Ruby legacy, as the main language used on the back end coding"></a>
                                 </li>
                             </ul>
-                            <p><button class="storybotton" type="submit">See Project</button></p>
+                            <p><button id="buttonAction" class="storybotton" type="submit">See Project</button></p>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
 
             <div class="programmingcontainer-row2">
                 <div class="projectsection0">
-                    <button type="submit" class="projectbutton1">See Project</button>
+                    <button id="buttonAction0" type="submit" class="projectbutton1">See Project</button>
                 </div>
 
                 <div class="projectsection1">
@@ -143,7 +143,7 @@
                         <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png"
                                     alt="HTML legend, as reference of the coding used on the front end"></a></li>
                     </ul>
-                    <button type="submit" class="projectbutton">See Project</button>
+                    <button id="buttonAction1" type="submit" class="projectbutton">See Project</button>
                 </div>
 
                 <div class="projectsection2">
@@ -159,7 +159,7 @@
                         <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png"
                                     alt="HTML legend, as reference of the coding used on the front end"></a></li>
                     </ul>
-                    <button type="submit" class="projectbutton">See Project</button>
+                    <button id="buttonAction2" type="submit" class="projectbutton">See Project</button>
                 </div>
             </div>
 
@@ -177,7 +177,7 @@
                         <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png"
                                     alt="HTML legend, as reference of the coding used on the front end"></a></li>
                     </ul>
-                    <button type="submit" class="projectbutton">See Project</button>
+                    <button id="buttonAction3" type="submit" class="projectbutton">See Project</button>
                 </div>
 
                 <div class="projectsection4">
@@ -193,7 +193,7 @@
                         <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png"
                                     alt="HTML legend, as reference of the coding used on the front end"></a></li>
                     </ul>
-                    <button type="submit" class="projectbutton">See Project</button>
+                    <button id="buttonAction4" type="submit" class="projectbutton">See Project</button>
                 </div>
 
                 <div class="projectsection5">
@@ -209,7 +209,7 @@
                         <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png"
                                     alt="HTML legend, as reference of the coding used on the front end"></a></li>
                     </ul>
-                    <button type="submit" class="projectbutton">See Project</button>
+                    <button id="buttonAction5" type="submit" class="projectbutton">See Project</button>
                 </div>
             </div>
         </div>
@@ -310,11 +310,11 @@
         </div>
     </section>
 
-    <div class="popup-modal">
+    <div id="popUp-slice" class="popup-modal hidden">
         <div class="projectdetails">
             <div class="projectdetails-title">
                 <h3>Keeping track of hundreds of components website</h3>
-                <img src="./images/icn-close.svg" alt="Exit Icon">
+                <p id="popUpClose"><img src="./images/icn-close.svg" alt="Exit Icon"></p>
             </div>
             <div>
                 <ul class="projectdetails-skills">
@@ -346,7 +346,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div>        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
