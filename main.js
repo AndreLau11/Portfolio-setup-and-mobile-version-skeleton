@@ -10,6 +10,15 @@ const popUpClose = document.getElementById('popUpClose');
 const projects = document.getElementById('projects');
 const buttons = projects.getElementsByTagName('button');
 
+// function createImage(image) { 
+//   var x = document.createElement("IMG"); 
+//   x.setAttribute("src", image); 
+//   x.setAttribute("width", "304"); 
+//   x.setAttribute("width", "228"); 
+//   x.setAttribute("alt", "The Great Ocean"); 
+//   document.body.appendChild(x); 
+// } 
+
 let projects = [
   first = {
     name: 'Survey Form',
@@ -30,7 +39,7 @@ let projects = [
     sourceLink: 'https://github.com/AndreLau11/Technical_Documentation/settings/pages'
   },
   third = {  
-    name: 'survey',
+    name: 'Survey',
     Description: 'A basic survey that shows all the posibilities on a survery using text filters, text input types, email and phone number validation and takes all that information and sent it to the destination.',
     Feature: 'A page that uses all the inpt types, and filters for them ina good shape and send results.',
     image: 'image',
