@@ -9,16 +9,15 @@ const portFolio = document.getElementById('projects-container');
 const buttons = portFolio.getElementsByTagName('button');
 
 const popUp = document.getElementById('popUp-slice');
-const projectButton = document.getElementsByClassName('projectbutton');
-const popUpImg = document.querySelector('.pop-img');
-const popUpTitle = document.querySelector('.pop-title');
-const popUpParagraph = document.querySelector('.pop-paragraph');
-
-const buttonContainer = document.getElementById('projectDetails-popUp');
+// const projectButton = document.getElementsByClassName('projectbutton');
+// const popUpImg = document.querySelector('.pop-img');
+// const popUpTitle = document.querySelector('.pop-title');
+// const popUpParagraph = document.querySelector('.pop-paragraph');
+// const buttonContainer = document.getElementById('projectDetails-popUp');
 
 const projectInformation = [
   {
-    id: 1,
+    id: 0,
     name: '',
     description: '',
     feature: '',
@@ -28,7 +27,7 @@ const projectInformation = [
     sourceLink: '',
   },
   {
-    id: 2,
+    id: 1,
     name: 'Survey Form',
     description:
       'This is a general survey form that can be used for your project at any  option you might have.',
@@ -40,7 +39,7 @@ const projectInformation = [
     sourceLink: 'https://github.com/AndreLau11/Survey_Form',
   },
   {
-    id: 3,
+    id: 2,
     name: 'Technical Documentation',
     description:
       'A description page of the new technology and how it impacts out complete daily living.',
@@ -53,7 +52,7 @@ const projectInformation = [
       'https://github.com/AndreLau11/Technical_Documentation',
   },
   {
-    id: 4,
+    id: 3,
     name: 'Survey',
     description:
       'A basic survey that shows all the posibilities on a survery using text filters, text input types, email and phone number validation and takes all that information and sent it to the destination.',
@@ -65,7 +64,7 @@ const projectInformation = [
     sourceLink: 'https://github.com/AndreLau11/Survey',
   },
   {
-    id: 5,
+    id: 4,
     name: 'Personal Portfolio',
     description:
       'A general skill termination that includes all I have been capable of doing.',
@@ -76,7 +75,7 @@ const projectInformation = [
     sourceLink: 'https://github.com/AndreLau11/Personal_Portfolio',
   },
   {
-    id: 6,
+    id: 5,
     name: 'My Product',
     description:
       'A website that gives out and promotes the product to get it sell on the market.',
@@ -94,19 +93,17 @@ function LoadProjects() {
     // if (counter == 0) {
     //   projectInformation[counter].id = 1;
     // }
-    let k;
-    let technologies = '';
-    for (k = 0; k < projectInformation[counter].technologies.length; k += 1) {
-      technologies += `<li>
-        <a href='#'>${projectInformation[counter].technologies[k]}</a>
-      </li>`;
-    }
+    // let k;
+    // let technologies = '';
+    // for (k = 0; k < projectInformation[counter].technologies.length; k += 1) {
+    //   technologies += `<li>
+    //     <a href='#'>${projectInformation[counter].technologies[k]}</a>
+    //   </li>`;
+    // }
 
     cardContainer.innerHTML += `<div class="projectsection${[counter]}">
         <h2 class="projecttitle">${projectInformation[counter].name}</h2>
-        <p class="projectparagraph">${
-          projectInformation[counter].description
-        }</p>
+        <p class="projectparagraph">${projectInformation[counter].description}</p>
         <ul class="skill">
             <li><a href=""><img class="skill-image-tag" src="./images/project/Tag0.png"
                         alt="Rubi legend, as reference of the back end language used on the project"></a>
@@ -120,9 +117,14 @@ function LoadProjects() {
     </div>`;
   }
 
+  function hideModal() {
+    popUp.innerHTML = '';
+    popUp.classList.add('hidden');
+  }
+
   function showModal(button) {
-    let pId = button.target.getAttribute('data-target');
-    let project = projectInformation.filter((p) => p.id == pId);
+    const pId = button.target.getAttribute('data-target');
+    const project = projectInformation.filter((p) => p.id == pId);
 
     popUp.innerHTML = `<div class="projectdetails">
             <div class="projectdetails-title">
@@ -159,17 +161,12 @@ function LoadProjects() {
     popUpClose.addEventListener('click', hideModal);
   }
 
-  function hideModal() {
-    popUp.innerHTML = '';
-    popUp.classList.add('hidden');
-  }
-
   let i;
   for (i = 0; i < buttons.length; i += 1) {
     buttons[i].addEventListener('click', showModal.bind(buttons[i]));
   }
 
-  //HAMBURGER MENU//
+  // HAMBURGER MENU//
 
   function showNavbar() {
     mobileNav.classList.remove('hidden');
@@ -186,19 +183,15 @@ function LoadProjects() {
   navPortfolio.addEventListener('click', hideNavbar);
   navAbout.addEventListener('click', hideNavbar);
   navContact.addEventListener('click', hideNavbar);
-  
-
   const storybutton = document.getElementById('storybottonAction');
   const storypopup = document.getElementById('popUp-slicestory');
-  const storyClose = document.getElementById('popUpClosehistory')
-  
+  const storyClose = document.getElementById('popUpClosehistory');
   function showPopUp() {
     storypopup.classList.remove('hidden');
   }
   function hidePopUp() {
     storypopup.classList.add('hidden');
   }
-  
   storybutton.addEventListener('click', showPopUp);
   storyClose.addEventListener('click', hidePopUp);
 }
