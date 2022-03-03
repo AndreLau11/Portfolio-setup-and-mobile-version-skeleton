@@ -305,7 +305,7 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   flex: none;
-  order: 0;
+  order: 3;
   flex-grow: 0;
   color: #fff;
   width: 100%;
@@ -315,6 +315,23 @@ h2 {
   transition: all 0.2s ease-in;
 }
 
+.anchorarea {
+  display: flex;
+  justify-content: space-around;  
+}
+
+.anchorbtn {
+  background-color: #c75000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 20px;
+}
+
+.anchorbtn:hover,
 .projectbutton:hover,
 .projectbutton1:hover {
   background: #fff5e1;
@@ -323,12 +340,14 @@ h2 {
   color: #b84900;
 }
 
+.anchorbtn:active,
 .projectbutton:active,
 .projectbutton1:active {
   background: #b84900;
   color: #f4f1f0;
 }
 
+.anchorbtn:disabled,
 .projectbutton:disabled,
 .projectbutton1:disabled {
   background: #f4f1f0;
@@ -1051,9 +1070,9 @@ img:hover {
     margin: 50px 35px;
   }
 
-  .projectbutton {
+  /* .projectbutton {
     display: none;
-  }
+  } */
 
   .projectsection0 > ul {
     display: none;
