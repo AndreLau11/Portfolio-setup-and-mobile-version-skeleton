@@ -8,12 +8,11 @@ const cardContainer = document.getElementById('card-container');
 const buttons = cardContainer.getElementsByTagName('button');
 
 const popUp = document.getElementById('popUp-slice');
-const projectButton = document.getElementsByClassName('projectbutton');
-const popUpImg = document.querySelector('.pop-img');
-const popUpTitle = document.querySelector('.pop-title');
-const popUpParagraph = document.querySelector('.pop-paragraph');
-
-const buttonContainer = document.getElementById('projectDetails-popUp');
+// const projectButton = document.getElementsByClassName('projectbutton');
+// const popUpImg = document.querySelector('.pop-img');
+// const popUpTitle = document.querySelector('.pop-title');
+// const popUpParagraph = document.querySelector('.pop-paragraph');
+// const buttonContainer = document.getElementById('projectDetails-popUp');
 
 const projectInformation = [
   {
@@ -89,23 +88,18 @@ const projectInformation = [
 
 function LoadProjects() {
   let counter;
-  for (counter = 0; counter < projectInformation.length; counter += 1) {
-    if (counter == 0) {
-      projectInformation[counter].id = 1;
-    }
-    let k;
-    let technologies = '';
-    for (k = 0; k < projectInformation[counter].technologies.length; k += 1) {
-      technologies += `<li>
-        <a href='#'>${projectInformation[counter].technologies[k]}</a>
-      </li>`;
-    }
+  // for (counter = 0; counter < projectInformation.length; counter += 1) {
+  //   let k;
+  //   let technologies = '';
+  //   for (k = 0; k < projectInformation[counter].technologies.length; k += 1) {
+  //     technologies += `<li>
+  //       <a href='#'>${projectInformation[counter].technologies[k]}</a>
+  //     </li>`;
+  //   }
 
     cardContainer.innerHTML += `<div class="projectsection${[counter]}">
         <h2 class="projecttitle">${projectInformation[counter].name}</h2>
-        <p class="projectparagraph">${
-          projectInformation[counter].description
-        }</p>
+        <p class="projectparagraph">${projectInformation[counter].description}</p>
         <ul class="skill">
             <li><a href=""><img class="skill-image-tag" src="./images/project/Tag0.png"
                         alt="Rubi legend, as reference of the back end language used on the project"></a>
@@ -115,63 +109,66 @@ function LoadProjects() {
             <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png"
                         alt="HTML legend, as reference of the coding used on the front end"></a></li>
         </ul>
-        <button data-target="${
-          projectInformation[counter].id
-        }" type="submit" class="projectbutton">See Project</button>
+        <button data-target="${projectInformation[counter].id}" type="submit" class="projectbutton">See Project</button>
     </div>`;
   }
 
   function showModal(button) {
-    let pId = button.target.getAttribute('data-target');
-    let project = projectInformation.filter((p) => p.id == pId);
-
+    const pId = button.target.getAttribute('data-target');
+    const project = projectInformation.filter((p) => p.id === pId);
+    
     popUp.innerHTML = ` <div class="projectdetails">
-            <div class="projectdetails-title">
-                <h3 id="popUpTitle" class="pop-title">${project[0].name}</h3>
-                <p id="popUpClose"><img id="popUpCloseImage" src="./images/icn-close.svg" alt="Exit Icon"></p>
-            </div>
-            <div>
-                <ul class="projectdetails-skills">
-                    <li><a href="#"><img src="./images/popup/Tag0.svg" alt="HTLM icon that leads to the html code"></a>
-                    </li>
-                    <li><a href="#"><img src="./images/popup/Tag1.svg"
-                                alt="Bootstrap icon that leads to the bootstrap format used on the project"></a></li>
-                    <li><a href="#"><img src="./images/popup/Tag2.svg"
-                                alt="Ruby on Rails icon that leads to the code on this lenguage that was used on the project"></a>
-                    </li>
-                </ul>
-            </div>
+          <div class="projectdetails-title">
+              <h3 id="popUpTitle" class="pop-title">${project[0].name}</h3>
+              <p id="popUpClose"><img id="popUpCloseImage" src="./images/icn-close.svg" alt="Exit Icon"></p>
+          </div>
+          <div>
+              <ul class="projectdetails-skills">
+                  <li><a href="#"><img src="./images/popup/Tag0.svg" alt="HTLM icon that leads to the html code"></a>
+                  </li>
+                  <li><a href="#"><img src="./images/popup/Tag1.svg"
+                              alt="Bootstrap icon that leads to the bootstrap format used on the project"></a></li>
+                  <li><a href="#"><img src="./images/popup/Tag2.svg"
+                              alt="Ruby on Rails icon that leads to the code on this lenguage that was used on the project"></a>
+                  </li>
+              </ul>
+          </div>
 
-            <div class="projectdetails-content">
-                <div class="projectdetails-image">
-                    <img class="pop-img" src="${project[0].image}"
-                        alt="A half scrren image that shows the first impresion of the results after the coding implementation">
-                </div>
-                <div class="projectdetails-body">
-                    <p class="pop-paragraph">${project[0].description}</p>
-                    <ul id="projectDetails-popUp" class="projectdetails-buttons">
-                       <li><button class="popUpSource" id="projectDetailButtonLive" onclick="location.href= ${project[0].liveVersionLink};">See Live <img src="./images/popup/Icon-see-live.svg" alt=""></button></li>
-                        <li><button class="popUpGithub" id="projectDetailButtonSource" onclick="location.href=${project[0].sourceLink};">See Source <img src="./images/popup/Vector.svg" alt=""></button></li>
-                    </ul>
-                </div>
-            </div>
-        </div>    `;
+          <div class="projectdetails-content">
+              <div class="projectdetails-image">
+                  <img class="pop-img" src="${project[0].image}"
+                      alt="A half scrren image that shows the first impresion of the results after the coding implementation">
+              </div>
+              <div class="projectdetails-body">
+                  <p class="pop-paragraph">${project[0].description}</p>
+                  <ul class="projectdetails-buttons">
+                      <li><button class="popUpSource" id="projectDetailButtonLive" onclick="location.href= ${project[0].liveVersionLink};">See Live <img src="./images/popup/Icon-see-live.svg" alt=""></button></li>
+                      <li><button class="popUpGithub" id="projectDetailButtonSource" onclick="location.href=${project[0].sourceLink};">See Source <img src="./images/popup/Vector.svg" alt=""></button></li>
+                  </ul>
+              </div>
+          </div>
+      </div>`;
     popUp.classList.remove('hidden');
     const popUpClose = document.getElementById('popUpClose');
+    function hideModal() {
+      popUp.innerHTML = '';
+      popUp.classList.add('hidden');
+    }
+
     popUpClose.addEventListener('click', hideModal);
   }
 
-  function hideModal() {
-    popUp.innerHTML = '';
-    popUp.classList.add('hidden');
-  }
+  // function hideModal() {
+  //   popUp.innerHTML = '';
+  //   popUp.classList.add('hidden');
+  // }
 
   let i;
   for (i = 0; i < buttons.length; i += 1) {
     buttons[i].addEventListener('click', showModal.bind(buttons[i]));
   }
 
-  //HAMBURGER MENU//
+  // HAMBURGER MENU//
 
   function showNavbar() {
     mobileNav.classList.remove('hidden');
@@ -183,18 +180,16 @@ function LoadProjects() {
     navOpen.classList.remove('hidden');
   }
 
-  function showPopUp() {
-    popUp.classList.remove('hidden');
-
-    function hidePopUp() {
-      popUp.classList.add('hidden');
-    }
-  }
-  navOpen.addEventListener('click', showNavbar);
-  navClose.addEventListener('click', hideNavbar);
-  navPortfolio.addEventListener('click', hideNavbar);
-  navAbout.addEventListener('click', hideNavbar);
-  navContact.addEventListener('click', hideNavbar);
-}
+  // function showPopUp() {
+  //   popUp.classList.remove('hidden');
+    // }
+  //   function hidePopUp() {
+  //     popUp.classList.add('hidden');
+  //   }
+    navOpen.addEventListener('click', showNavbar);
+    navClose.addEventListener('click', hideNavbar);
+    navPortfolio.addEventListener('click', hideNavbar);
+    navAbout.addEventListener('click', hideNavbar);
+    navContact.addEventListener('click', hideNavbar);
 
 document.addEventListener('DOMContentLoaded', LoadProjects, false);

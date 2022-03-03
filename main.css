@@ -669,6 +669,10 @@ h2 {
   flex-direction: column;
 }
 
+img:hover {
+  transform: scale(1.05);
+}
+
 .projectdetails-content > div > img {
   width: 311px;
   height: 220px;
@@ -708,10 +712,6 @@ h2 {
 .projectdetails-body {
   width: 100%;
   margin-right: 10px;
-}
-
-img:hover {
-  transform: scale(1.05);
 }
 
 @media screen and (min-width: 992px) {
@@ -894,7 +894,7 @@ img:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    }
+  }
 
   .cardContainer {
     display: grid !important;
