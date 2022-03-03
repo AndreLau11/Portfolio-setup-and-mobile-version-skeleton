@@ -122,7 +122,7 @@ function LoadProjects() {
 
   function showModal(button) {
     const pId = button.target.getAttribute('data-target');
-    const project = projectInformation.filter((p) => parseInt(p.id) === parseInt(pId));
+    const project = projectInformation.filter((p) => parseInt(p.id, 10) === parseInt(pId, 10));
 
     popUp.innerHTML = `<div class="projectdetails">
             <div class="projectdetails-title">
