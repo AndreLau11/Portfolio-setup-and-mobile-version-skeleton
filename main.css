@@ -312,7 +312,7 @@ h2 {
   height: 48px;
   background-color: #c75000;
   justify-content: center;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .projectbutton:hover,
@@ -704,6 +704,12 @@ h2 {
   width: 100%;
 }
 
+.projectdetails-content,
+.projectdetails-body {
+  width: 100%;
+  margin-right: 10px;
+}
+
 img:hover {
   transform: scale(1.05);
 }
@@ -876,27 +882,24 @@ img:hover {
     width: 45%;
   }
 
-  .programmingcontainer-row1,
-  .programmingcontainer-row2,
-  .programmingcontainer-row3 {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    margin-bottom: 24px;
-  }
-
   .projectsection0,
   .projectsection1,
   .projectsection2,
   .projectsection3,
   .projectsection4,
   .projectsection5 {
-    width: 33.33%;
+    width: 100%;
     height: 432px;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    }
+
+  .cardContainer {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
   }
 
   .projectsection0 > ul,
@@ -1052,8 +1055,13 @@ img:hover {
     display: none;
   }
 
-  .projectbutton1 {
+  .projectsection0 > ul {
+    display: none;
+  }
+
+  .projectsection0 > button {
     display: block;
+    order: 4;
   }
 
   .projectdetails-body {
