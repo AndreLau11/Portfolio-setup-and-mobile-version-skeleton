@@ -54,10 +54,8 @@ const projectInformation = [
   {
     id: 3,
     name: 'Survey',
-    description:
-      'A basic survey that shows all the posibilities on a survery using text filters, text input types, email and phone number validation and takes all that information and sent it to the destination.',
-    feature:
-      'A page that uses all the inpt types, and filters for them ina good shape and send results.',
+    description: 'A basic survey that shows all the posibilities on a survery using text filters, text input types, email and phone number validation and takes all that information and sent it to the destination.',
+    feature: 'A page that uses all the inpt types, and filters for them ina good shape and send results.',
     image: './images/project/images/survey.jpg',
     technologies: ['HTML', 'inline CSS'],
     liveVersionLink: 'https://andrelau11.github.io/Survey/',
@@ -124,7 +122,7 @@ function LoadProjects() {
 
   function showModal(button) {
     const pId = button.target.getAttribute('data-target');
-    const project = projectInformation.filter((p) => p.id == pId);
+    const project = projectInformation.filter((p) => parseInt(p.id) === parseInt(pId));
 
     popUp.innerHTML = `<div class="projectdetails">
             <div class="projectdetails-title">
