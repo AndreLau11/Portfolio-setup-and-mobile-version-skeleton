@@ -43,14 +43,15 @@ const projectInformation = [
     image: './images/project/images/technicaldocumentation.jpg',
     technologies: ['HTML', 'inline CSS'],
     liveVersionLink: 'https://andrelau11.github.io/Technical_Documentation/',
-    sourceLink:
-      'https://github.com/AndreLau11/Technical_Documentation',
+    sourceLink: 'https://github.com/AndreLau11/Technical_Documentation',
   },
   {
     id: 3,
     name: 'Survey',
-    description: 'A basic survey that shows all the posibilities on a survery using text filters, text input types, email and phone number validation and takes all that information and sent it to the destination.',
-    feature: 'A page that uses all the inpt types, and filters for them ina good shape and send results.',
+    description:
+      'A basic survey that shows all the posibilities on a survery using text filters, text input types, email and phone number validation and takes all that information and sent it to the destination.',
+    feature:
+      'A page that uses all the inpt types, and filters for them ina good shape and send results.',
     image: './images/project/images/survey.jpg',
     technologies: ['HTML', 'inline CSS'],
     liveVersionLink: 'https://andrelau11.github.io/Survey/',
@@ -85,7 +86,9 @@ function LoadProjects() {
   for (counter = 0; counter < projectInformation.length; counter += 1) {
     cardContainer.innerHTML += `<div class="projectsection${[counter]}">
         <h2 class="projecttitle">${projectInformation[counter].name}</h2>
-        <p class="projectparagraph">${projectInformation[counter].description}</p>
+        <p class="projectparagraph">${
+          projectInformation[counter].description
+        }</p>
         <ul class="skill">
             <li><a href=""><img class="skill-image-tag" src="./images/project/Tag0.png"
                         alt="Rubi legend, as reference of the back end language used on the project"></a>
@@ -95,7 +98,9 @@ function LoadProjects() {
             <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png"
                         alt="HTML legend, as reference of the coding used on the front end"></a></li>
         </ul>
-        <button data-target="${projectInformation[counter].id}" type="submit" class="projectbutton">See Project</button>
+        <button data-target="${
+          projectInformation[counter].id
+        }" type="submit" class="projectbutton">See Project</button>
     </div>`;
   }
 
@@ -107,7 +112,9 @@ function LoadProjects() {
 
   function showModal(button) {
     const pId = button.target.getAttribute('data-target');
-    const project = projectInformation.filter((p) => parseInt(p.id, 10) === parseInt(pId, 10));
+    const project = projectInformation.filter(
+      (p) => parseInt(p.id, 10) === parseInt(pId, 10)
+    );
 
     popUp.innerHTML = `<div class="projectdetails">
             <div class="projectdetails-title">
@@ -184,3 +191,20 @@ function LoadProjects() {
 }
 
 document.addEventListener('DOMContentLoaded', LoadProjects, false);
+
+const form = document.getElementById('contactMe');
+const erroMessageContainer = document.getElementById('error_message');
+const message = 'Email address should be in lowercase letters only.';
+const inpuEmail = document.getElementById('email');
+
+form.addEventListener('submit', (event) => {
+  const regix = /[A-Z]/;
+
+  if (regix.test(inpuEmail.value)) {
+    erroMessageContainer.innerHTML = message;
+    erroMessageContainer.classList.remove('hidden');
+    event.preventDefault();
+  } else if (!erroMessageContainer.classList.classname === 'hidden') {
+    erroMessageContainer.classList.add('hidden');
+  }
+});
