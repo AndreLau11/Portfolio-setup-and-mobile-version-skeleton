@@ -315,9 +315,24 @@ h2 {
   transition: all 0.2s ease-in;
 }
 
+.projectdetails-content {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 24px;
+  margin: 0 !important;
+}
+
+.projectdetails-body {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .anchorarea {
   display: flex;
-  justify-content: space-around;
+  gap: 10px;
+  margin-bottom: 0;
 }
 
 .anchorbtn {
@@ -651,7 +666,7 @@ h2 {
 
 .projectdetails {
   background: #fff;
-  padding: 20px;
+  padding: 35px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -681,11 +696,6 @@ h2 {
   justify-content: flex-start;
   gap: 8px;
   padding: 0;
-}
-
-.projectdetails-content {
-  display: flex;
-  flex-direction: column;
 }
 
 img:hover {
@@ -953,6 +963,7 @@ img:hover {
 
   .programmingcontainer-row1 {
     gap: 24px;
+    padding-bottom: 16px;
   }
 
   .skill {
@@ -1056,10 +1067,29 @@ img:hover {
   }
 
   .projectdetails-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
     gap: 12px;
+  }
+
+  .pop-img {
+    width: 100%;
+  }
+
+  .projectdetails-content > div > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .anchorarea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .anchorbtn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
 }
 
@@ -1071,12 +1101,8 @@ img:hover {
   }
 
   .projectdetails {
-    margin: 50px 35px;
+    margin: 5% 15%;
   }
-
-  /* .projectbutton {
-    display: none;
-  } */
 
   .projectsection0 > ul {
     display: none;

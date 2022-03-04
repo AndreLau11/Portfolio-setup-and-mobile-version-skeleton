@@ -7,14 +7,7 @@ const navContact = document.getElementById('mobile__nav_contact');
 const cardContainer = document.getElementById('card-container');
 const portFolio = document.getElementById('projects-container');
 const buttons = portFolio.getElementsByTagName('button');
-
 const popUp = document.getElementById('popUp-slice');
-// const projectButton = document.getElementsByClassName('projectbutton');
-// const popUpImg = document.querySelector('.pop-img');
-// const popUpTitle = document.querySelector('.pop-title');
-// const popUpParagraph = document.querySelector('.pop-paragraph');
-// const buttonContainer = document.getElementById('projectDetails-popUp');
-
 const projectInformation = [
   {
     id: 0,
@@ -88,17 +81,6 @@ const projectInformation = [
 function LoadProjects() {
   let counter;
   for (counter = 0; counter < projectInformation.length; counter += 1) {
-    // if (counter == 0) {
-    //   projectInformation[counter].id = 1;
-    // }
-    // let k;
-    // let technologies = '';
-    // for (k = 0; k < projectInformation[counter].technologies.length; k += 1) {
-    //   technologies += `<li>
-    //     <a href='#'>${projectInformation[counter].technologies[k]}</a>
-    //   </li>`;
-    // }
-
     cardContainer.innerHTML += `<div class="projectsection${[counter]}">
         <h2 class="projecttitle">${projectInformation[counter].name}</h2>
         <p class="projectparagraph">${projectInformation[counter].description}</p>
@@ -142,7 +124,7 @@ function LoadProjects() {
             </div>
             <div class="projectdetails-content">
                 <div class="projectdetails-image">
-                    <img class="pop-img" src="${project[0].image}"
+                    <img class="pop-img" width="100%" src="${project[0].image}"
                         alt="A half scrren image that shows the first impresion of the results after the coding implementation">
                 </div>
                 <div class="projectdetails-body">
