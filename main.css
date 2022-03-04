@@ -32,6 +32,10 @@ ul {
   list-style: none !important;
 }
 
+.scroll-null {
+  overflow: hidden;
+}
+
 .navbar {
   align-items: flex-end;
   display: flex;

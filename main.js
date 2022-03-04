@@ -8,6 +8,8 @@ const cardContainer = document.getElementById('card-container');
 const portFolio = document.getElementById('projects-container');
 const buttons = portFolio.getElementsByTagName('button');
 const popUp = document.getElementById('popUp-slice');
+const generalDocument = document.getElementById('html');
+
 const projectInformation = [
   {
     id: 0,
@@ -136,9 +138,11 @@ function LoadProjects() {
                 </div>
             </div>
         </div>`;
+
     popUp.classList.remove('hidden');
     const popUpClose = document.getElementById('popUpClose');
     popUpClose.addEventListener('click', hideModal);
+    generalDocument.classList.add('scroll-null');
   }
 
   let i;
@@ -168,9 +172,11 @@ function LoadProjects() {
   const storyClose = document.getElementById('popUpClosehistory');
   function showPopUp() {
     storypopup.classList.remove('hidden');
+    generalDocument.classList.add('scroll-null');
   }
   function hidePopUp() {
     storypopup.classList.add('hidden');
+    generalDocument.classList.remove('scroll-null');
   }
   storybutton.addEventListener('click', showPopUp);
   storyClose.addEventListener('click', hidePopUp);
