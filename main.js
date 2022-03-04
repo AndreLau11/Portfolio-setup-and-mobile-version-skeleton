@@ -87,8 +87,8 @@ function LoadProjects() {
     cardContainer.innerHTML += `<div class="projectsection${[counter]}">
         <h2 class="projecttitle">${projectInformation[counter].name}</h2>
         <p class="projectparagraph">${
-  projectInformation[counter].description
-}</p>
+          projectInformation[counter].description
+        }</p>
         <ul class="skill">
             <li><a href=""><img class="skill-image-tag" src="./images/project/Tag0.png"
                         alt="Rubi legend, as reference of the back end language used on the project"></a>
@@ -99,8 +99,8 @@ function LoadProjects() {
                         alt="HTML legend, as reference of the coding used on the front end"></a></li>
         </ul>
         <button data-target="${
-  projectInformation[counter].id
-}" type="submit" class="projectbutton">See Project</button>
+          projectInformation[counter].id
+        }" type="submit" class="projectbutton">See Project</button>
     </div>`;
   }
 
@@ -113,7 +113,7 @@ function LoadProjects() {
   function showModal(button) {
     const pId = button.target.getAttribute('data-target');
     const project = projectInformation.filter(
-      (p) => parseInt(p.id, 10) === parseInt(pId, 10),
+      (p) => parseInt(p.id, 10) === parseInt(pId, 10)
     );
 
     popUp.innerHTML = `<div class="projectdetails">
@@ -195,12 +195,12 @@ document.addEventListener('DOMContentLoaded', LoadProjects, false);
 const form = document.getElementById('contactMe');
 const erroMessageContainer = document.getElementById('error_message');
 const message = 'Email address should be in lowercase letters only.';
-const inpuEmail = document.getElementById('email');
+const inputEmail = document.getElementById('email');
 
 form.addEventListener('submit', (event) => {
   const regix = /[A-Z]/;
 
-  if (regix.test(inpuEmail.value)) {
+  if (regix.test(inputEmail.value)) {
     erroMessageContainer.innerHTML = message;
     erroMessageContainer.classList.remove('hidden');
     event.preventDefault();
@@ -208,3 +208,22 @@ form.addEventListener('submit', (event) => {
     erroMessageContainer.classList.add('hidden');
   }
 });
+
+const firstName = document.getElementById('firstName');
+const lastName = document.getElementById('lastName');
+const inputMessage = document.getElementById('message');
+const key = 'CONTACT_FORM_DATA';
+const inputs = [firstName, lastName, inputEmail, inputMessage];
+let i;
+function SaveToLocalStorage() {
+  const inputsObject = {};
+  for (i = 0; i < inputs.length; i += 1) {
+    inputsObject[(inputs[i].id = inputs[i].value)];
+  }
+  localStorage.setItem(key, JSON.stringify(inputsObject));
+}
+
+firstName.setAttribute('onchange', 'SaveToLocalStorage()');
+lastName.setAttribute('onchange', 'SaveToLocalStorage()');
+inputEmail.setAttribute('onchange', 'SaveToLocalStorage()');
+inputMessage.setAttribute('onchange', 'SaveToLocalStorage()');
