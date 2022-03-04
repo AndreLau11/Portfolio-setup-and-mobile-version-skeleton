@@ -209,20 +209,36 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-const firstName = document.getElementById('firstName');
-const lastName = document.getElementById('lastName');
+const firstName = document.getElementById('first_name');
+const lastName = document.getElementById('last_name');
+const fulllName = document.getElementById('full_name');
 const inputMessage = document.getElementById('message');
 const key = 'CONTACT_FORM_DATA';
-const inputs = [firstName, lastName, inputEmail, inputMessage];
+const inputs = [firstName, lastName, inputEmail, inputMessage, fulllName];
 let i;
 function SaveToLocalStorage() {
   const inputsObject = {};
   for (i = 0; i < inputs.length; i += 1) {
-    inputsObject[(inputs[i].id = inputs[i].value)];
+    inputsObject[inputs[i].id] = inputs[i].value;
   }
   localStorage.setItem(key, JSON.stringify(inputsObject));
 }
-
+function setFormData() {
+  const formData = JSON.parse(localStorage.getItem(key));
+  firstName.value = formData.first_name;
+  lastName.value = formData.last_name;
+  fulllName.value = formData.full_name;
+  inputEmail.value = formData.email;
+  inputMessage.value = formData.message;
+}
+function checkSavedData() {
+  if (!localStorage.getItem(key)) {
+    SaveToLocalStorage();
+  } else {
+    setFormData();
+  }
+}
+checkSavedData();
 firstName.setAttribute('onchange', 'SaveToLocalStorage()');
 lastName.setAttribute('onchange', 'SaveToLocalStorage()');
 inputEmail.setAttribute('onchange', 'SaveToLocalStorage()');
