@@ -741,11 +741,24 @@ img:hover {
   width: 100%;
 }
 
+.informationsection-small {
+  display: flex;
+  flex-direction: column;
+}
+
 .projectdetails-content,
 .projectdetails-body {
   width: 100%;
   margin-right: 10px;
 }
+
+.informationsection-small > small {
+  color: #731c24;
+  margin-bottom: 16px;
+  background-color: #f8d7da;
+  padding: 10px;
+}
+
 
 @media screen and (min-width: 992px) {
   p {
