@@ -1,7 +1,7 @@
 header {
   background-color: #3c3a39;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -13,7 +13,7 @@ header {
 }
 
 body {
-  background-color: #1c1a19;
+  background-color: #1c1a19 !important;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -26,6 +26,14 @@ button {
 
 img {
   transition: all 0.2s ease-out;
+}
+
+ul {
+  list-style: none !important;
+}
+
+.scroll-null {
+  overflow: hidden;
 }
 
 .navbar {
@@ -113,7 +121,7 @@ img {
 
 h1 {
   color: #ff6b00;
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -133,7 +141,7 @@ h1 {
 
 h2 {
   color: #fff5e1;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -149,7 +157,7 @@ h2 {
 .firstsectionparagraph,
 .aboutmeparragraph {
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -165,6 +173,7 @@ h2 {
 .socialmedia {
   display: inline-flex;
   margin: 20px 20px 0 0;
+  gap: 20px;
 }
 
 .storysection {
@@ -183,7 +192,7 @@ h2 {
 }
 
 .storytitle {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -223,7 +232,7 @@ h2 {
 }
 
 .storysubtitle {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -277,7 +286,7 @@ h2 {
 
 .projecttitle {
   color: #fff;
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -290,7 +299,7 @@ h2 {
 
 .projectbutton,
 .projectbutton1 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -300,16 +309,48 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   flex: none;
-  order: 0;
+  order: 3;
   flex-grow: 0;
   color: #fff;
   width: 100%;
   height: 48px;
   background-color: #c75000;
   justify-content: center;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
 
+.projectdetails-content {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 24px;
+  margin: 0 !important;
+}
+
+.projectdetails-body {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.anchorarea {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0;
+}
+
+.anchorbtn {
+  background-color: #c75000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 20px;
+}
+
+.anchorbtn:hover,
 .projectbutton:hover,
 .projectbutton1:hover {
   background: #fff5e1;
@@ -318,12 +359,14 @@ h2 {
   color: #b84900;
 }
 
+.anchorbtn:active,
 .projectbutton:active,
 .projectbutton1:active {
   background: #b84900;
   color: #f4f1f0;
 }
 
+.anchorbtn:disabled,
 .projectbutton:disabled,
 .projectbutton1:disabled {
   background: #f4f1f0;
@@ -392,7 +435,7 @@ h2 {
 }
 
 .projectparagraph {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -412,7 +455,7 @@ h2 {
 }
 
 .aboutmetitle {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
@@ -438,7 +481,7 @@ h2 {
   order: 0;
   flex-grow: 0;
   color: #fff;
-  font-family: "InaiMathi", sans-serif;
+  font-family: 'InaiMathi', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -466,7 +509,7 @@ h2 {
 }
 
 .subline {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -487,7 +530,7 @@ h2 {
   display: flex;
   justify-content: center;
   color: #172b4d;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -498,7 +541,7 @@ h2 {
 
 .informationbutton {
   background-color: #c75000;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -569,6 +612,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  list-style: none;
 }
 
 .socialmedia2-img {
@@ -590,7 +634,7 @@ h2 {
 }
 
 .storybotton {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -624,8 +668,83 @@ h2 {
   color: #5b5957;
 }
 
+.projectdetails {
+  background: #fff;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 24px 16px;
+}
+
+.projectdetails-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.projectdetails-paragraph {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+}
+
+.projectdetails-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 0;
+}
+
 img:hover {
   transform: scale(1.05);
+}
+
+.projectdetails-content > div > img {
+  width: 311px;
+  height: 220px;
+}
+
+.projectdetails-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.projectdetails-buttons > li > button {
+  background-color: #c75000;
+  color: #fff;
+  width: 159px;
+  height: 48px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.popup-modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: auto;
+  right: auto;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.03);
+  backdrop-filter: blur(16px);
+  width: 100%;
+}
+
+.projectdetails-content,
+.projectdetails-body {
+  width: 100%;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 992px) {
@@ -680,6 +799,7 @@ img:hover {
     flex-direction: column;
     padding: 10px 0 0 0;
     row-gap: 15px;
+    list-style: none;
   }
 
   .navbar2 {
@@ -762,10 +882,7 @@ img:hover {
   .storysection-columns {
     display: flex;
     flex-direction: row;
-  }
-
-  .projectbutton {
-    display: none;
+    gap: 20px;
   }
 
   .storyimages {
@@ -773,6 +890,7 @@ img:hover {
     justify-content: flex-start;
     padding: 0;
     margin: 0;
+    list-style: none;
   }
 
   .projectsection1,
@@ -797,30 +915,40 @@ img:hover {
     width: 45%;
   }
 
-  .programmingcontainer-row1,
-  .programmingcontainer-row2,
-  .programmingcontainer-row3 {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    margin-bottom: 24px;
-  }
-
   .projectsection0,
   .projectsection1,
   .projectsection2,
   .projectsection3,
   .projectsection4,
   .projectsection5 {
-    width: 33.33%;
+    width: 100%;
     height: 432px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .cardContainer {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+  }
+
+  .projectsection0 > ul,
+  .projectsection1 > ul,
+  .projectsection2 > ul,
+  .projectsection3 > ul,
+  .projectsection4 > ul,
+  .projectsection5 > ul {
+    order: 3;
   }
 
   .projecttitle {
     font-size: 32px;
     line-height: 44px;
     padding: 0;
-    margin: 50% 16px 0 16px;
+    margin: 0 16px 0 16px;
   }
 
   .projectparagraph {
@@ -834,13 +962,19 @@ img:hover {
     background-color: #fff;
     padding: 141px;
     column-gap: 24px;
-    row-gap: 24px;
+    gap: 24px !important;
+  }
+
+  .programmingcontainer-row1 {
+    gap: 24px;
+    padding-bottom: 16px;
   }
 
   .skill {
     padding: 0;
     margin: 16px;
     justify-content: flex-start;
+    gap: 10px;
   }
 
   .storysection {
@@ -852,6 +986,7 @@ img:hover {
     justify-content: flex-start;
     margin: 20px 0;
     gap: 12px;
+    list-style: none;
   }
 
   .aboutmebutton {
@@ -933,5 +1068,68 @@ img:hover {
   .socialmedia2-img {
     width: 40px;
     height: auto;
+  }
+
+  .projectdetails-content {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .pop-img {
+    width: 100%;
+  }
+
+  .projectdetails-content > div > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .anchorarea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .anchorbtn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .projectdetails-image img {
+    width: 100% !important;
+    height: auto !important;
+    flex: 1 auto;
+  }
+
+  .projectdetails {
+    margin: 5% 15%;
+  }
+
+  .projectsection0 > ul {
+    display: none;
+  }
+
+  .projectsection0 > button {
+    display: block;
+    order: 4;
+  }
+
+  .projectdetails-body {
+    max-width: 400px;
+  }
+
+  .projectdetails-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    margin: 0 55px;
+  }
+
+  .projectdetails-buttons {
+    justify-content: space-evenly;
   }
 }

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en" class="">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QN1KH85S3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { window.dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-9QN1KH85S3');
     </script>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andre Lau Portfolio</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,12 +28,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
         <div id="mobile-nav" class="mobile__nav-container hidden">
-            <img id="close-menu" src="./images/icn-close.svg" alt="close button" />
+            <img id='close-menu' src="./images/icn-close.svg" alt="close button"/>
             <ul class="mobile__nav">
                 <li><a id="mobile__nav_portfolio" href="#portfolio">Portfolio</a></li>
                 <li><a id="mobile__nav_about" href="#aboutmeProject">About</a></li>
@@ -41,17 +43,15 @@
             </ul>
         </div>
         <nav class="navbar">
-            <a class="logo">
-                <h3>Hector Andre Lau</h3>
-            </a>
+                <h3 class='logo'>Hector Andre Lau</h3>
             <div class="navbar2">
-                <a href="#">
+                <a href="#portfolio">
                     <h3>Portfolio</h3>
                 </a>
-                <a href="#">
+                <a href="#aboutmeProject">
                     <h3>About</h3>
                 </a>
-                <a href="#">
+                <a href="#informationsectionProject">
                     <h3>Contact</h3>
                 </a>
                 <img class="email" src="./images/Desktop/first-page/Disabled.png" alt="email button">
@@ -81,7 +81,8 @@
                 </ul>
             </div>
         </div>
-        <div class="programmingcontainer">
+        
+        <div id="projects-container" class="programmingcontainer">
             <div class="programmingcontainer-row1">
                 <div id="portfolio" class="storysection">
                     <h2 class="storytitle">My Recent Work</h2>
@@ -98,9 +99,7 @@
                         </div>
                         <div class="storysection-column2">
                             <h3 class="storysubtitle">Multi-Post Stories</h3>
-                            <p class="storyparragraph">A daily selection of privately personalized reads; no accounts or
-                                sign-ups required. has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a standard dummy text.</p>
+                            <p class="storyparragraph">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
                             <ul class="storyimages2">
                                 <li class="img1"><a href=""><img class="skill-image-tag1"
                                             src="./images/SecondPage/Tag.png"
@@ -118,99 +117,16 @@
                                             alt="Ruby legacy, as the main language used on the back end coding"></a>
                                 </li>
                             </ul>
-                            <p><button class="storybotton" type="submit">See Project</button></p>
+                            <button id="storybottonAction" class="storybotton" type="submit">See Project</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="programmingcontainer-row2">
-                <div class="projectsection0">
-                    <button type="submit" class="projectbutton1">See Project</button>
-                </div>
-
-                <div class="projectsection1">
-                    <h2 class="projecttitle">Professional Art Priting Data</h2>
-                    <p class="projectparagraph">A daily selection of privately personalized reads; no accounts or
-                        sign-ups required. has been the industry's standard</p>
-                    <ul class="skill">
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag0.png"
-                                    alt="Rubi legend, as reference of the back end language used on the project"></a>
-                        </li>
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag1.png"
-                                    alt="Bootstrap legend, as reference of the tool used for styling the page"></a></li>
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png"
-                                    alt="HTML legend, as reference of the coding used on the front end"></a></li>
-                    </ul>
-                    <button type="submit" class="projectbutton">See Project</button>
-                </div>
-
-                <div class="projectsection2">
-                    <h2 class="projecttitle">Professional Art Priting Data</h2>
-                    <p class="projectparagraph">A daily selection of privately personalized reads; no accounts or
-                        sign-ups required. has been the industry's standard</p>
-                    <ul class="skill">
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag0.png"
-                                    alt="Rubi legend, as reference of the back end language used on the project"></a>
-                        </li>
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag1.png"
-                                    alt="Bootstrap legend, as reference of the tool used for styling the page"></a></li>
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png"
-                                    alt="HTML legend, as reference of the coding used on the front end"></a></li>
-                    </ul>
-                    <button type="submit" class="projectbutton">See Project</button>
-                </div>
+            <div id="card-container" class="cardContainer">
+                
             </div>
 
-            <div class="programmingcontainer-row3">
-                <div class="projectsection3">
-                    <h2 class="projecttitle">Professional Art Priting Data</h2>
-                    <p class="projectparagraph">A daily selection of privately personalized reads; no accounts or
-                        sign-ups required. has been the industry's standard</p>
-                    <ul class="skill">
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag0.png"
-                                    alt="Rubi legend, as reference of the back end language used on the project"></a>
-                        </li>
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag1.png"
-                                    alt="Bootstrap legend, as reference of the tool used for styling the page"></a></li>
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png"
-                                    alt="HTML legend, as reference of the coding used on the front end"></a></li>
-                    </ul>
-                    <button type="submit" class="projectbutton">See Project</button>
-                </div>
-
-                <div class="projectsection4">
-                    <h2 class="projecttitle">Professional Art Priting Data</h2>
-                    <p class="projectparagraph">A daily selection of privately personalized reads; no accounts or
-                        sign-ups required. has been the industry's standard</p>
-                    <ul class="skill">
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag0.png"
-                                    alt="Rubi legend, as reference of the back end language used on the project"></a>
-                        </li>
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag1.png"
-                                    alt="Bootstrap legend, as reference of the tool used for styling the page"></a></li>
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png"
-                                    alt="HTML legend, as reference of the coding used on the front end"></a></li>
-                    </ul>
-                    <button type="submit" class="projectbutton">See Project</button>
-                </div>
-
-                <div class="projectsection5">
-                    <h2 class="projecttitle">Professional Art Priting Data</h2>
-                    <p class="projectparagraph">A daily selection of privately personalized reads; no accounts or
-                        sign-ups required. has been the industry's standard</p>
-                    <ul class="skill">
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag0.png"
-                                    alt="Rubi legend, as reference of the back end language used on the project"></a>
-                        </li>
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag1.png"
-                                    alt="Bootstrap legend, as reference of the tool used for styling the page"></a></li>
-                        <li><a href=""><img class="skill-image-tag" src="./images/project/Tag2.png"
-                                    alt="HTML legend, as reference of the coding used on the front end"></a></li>
-                    </ul>
-                    <button type="submit" class="projectbutton">See Project</button>
-                </div>
-            </div>
         </div>
 
         <div id="aboutmeProject" class="aboutmesection">
@@ -308,7 +224,50 @@
             <img class="black-line" src="./images/Shape.png" alt="">
         </div>
     </section>
+
+    <div id="popUp-slice" class="popup-modal hidden">
+
+    </div>
+
+    <div id="popUp-slicestory" class="popup-modal hidden">
+        <div class="projectdetails">
+            <div class="projectdetails-title">
+                <h3 id="popUpTitle" class="pop-title">Multi-Post Stories</h3>
+                <p id="popUpClosehistory"><img id="popUpCloseImage" src="./images/icn-close.svg" alt="Exit Icon"></p>
+            </div>
+            <div>
+                <ul class="projectdetails-skills">
+                    <li><a href="#"><img src="./images/popup/Tag0.svg" alt="HTLM icon that leads to the html code"></a>
+                    </li>
+                    <li><a href="#"><img src="./images/popup/Tag1.svg"
+                                alt="Bootstrap icon that leads to the bootstrap format used on the project"></a></li>
+                    <li><a href="#"><img src="./images/popup/Tag2.svg"
+                                alt="Ruby on Rails icon that leads to the code on this lenguage that was used on the project"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="projectdetails-content">
+                <div class="projectdetails-image">
+                    <img id="projectDetailsImg" class="pop-img" src="./images/SecondPage/ImgPlaceholder.png"
+                        alt="A half scrren image that shows the first impresion of the results after the coding implementation">
+                </div>
+                <div class="projectdetails-body">
+                    <p id="projectDetailParagraph" class="pop-paragraph">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                        <p class="anchorarea">  
+                            <a class="anchorbtn" href = "https://andrelau11.github.io/Portfolio-setup-and-mobile-version-skeleton/">See Live <img src="./images/popup/Icon-see-live.svg" alt=""></a>
+                            <a class="anchorbtn" id="projectDetailButtonSource" href = "https://github.com/AndreLau11/Portfolio-setup-and-mobile-version-skeleton">See Source <img src="./images/popup/Vector.svg" alt=""></a>
+                        </p>          
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script src='main.js'></script>
-    
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
