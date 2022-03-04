@@ -102,6 +102,7 @@ function LoadProjects() {
   function hideModal() {
     popUp.innerHTML = '';
     popUp.classList.add('hidden');
+    generalDocument.classList.remove('scroll-null');
   }
 
   function showModal(button) {
