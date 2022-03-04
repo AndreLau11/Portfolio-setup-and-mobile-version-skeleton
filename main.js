@@ -87,8 +87,8 @@ function LoadProjects() {
     cardContainer.innerHTML += `<div class="projectsection${[counter]}">
         <h2 class="projecttitle">${projectInformation[counter].name}</h2>
         <p class="projectparagraph">${
-          projectInformation[counter].description
-        }</p>
+  projectInformation[counter].description
+}</p>
         <ul class="skill">
             <li><a href=""><img class="skill-image-tag" src="./images/project/Tag0.png"
                         alt="Rubi legend, as reference of the back end language used on the project"></a>
@@ -99,8 +99,8 @@ function LoadProjects() {
                         alt="HTML legend, as reference of the coding used on the front end"></a></li>
         </ul>
         <button data-target="${
-          projectInformation[counter].id
-        }" type="submit" class="projectbutton">See Project</button>
+  projectInformation[counter].id
+}" type="submit" class="projectbutton">See Project</button>
     </div>`;
   }
 
@@ -113,7 +113,7 @@ function LoadProjects() {
   function showModal(button) {
     const pId = button.target.getAttribute('data-target');
     const project = projectInformation.filter(
-      (p) => parseInt(p.id, 10) === parseInt(pId, 10)
+      (p) => parseInt(p.id, 10) === parseInt(pId, 10),
     );
 
     popUp.innerHTML = `<div class="projectdetails">
